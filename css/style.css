@@ -1,35 +1,121 @@
+/* GLOBAL RESET */
+* { box-sizing: border-box;}
+body { margin: 0;}
+
+/* GLOBAL COLORS */
+body { color: rgb(30, 31, 31)}
+a { color: rgba(240,128,128)}
+a:hover { color: rgb(235, 156, 156)}
+
+/* GLOBAL TYPOGRAPHY */
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    background: white;
-    margin: 0;
+    font-family: Helvetica, Arial, Sans-serif;
+    font-size: 88.75%; /* 14px */
+    line-height: 1.4;
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(235, 156, 156);
+    color: rgba(255,255,255, .8);
+    padding: 1em;
     display: grid;
-    align-content: center;
-    min-height: 100vh;     
-    
+    grid-template-columns: 1fr 1fr;;
+    align-items: center;
 }
 
-h1 {
-    font-size:48px;
-    text-transform: uppercase;
-    text-align: center;
+header a {
+    color: rgba(255,255,255, .8);
+    text-decoration: none;
 }
 
-h2 {
-    text-align: center;
+header a:hover {
+    color: rgba(255,255,255, 1);
 }
 
-p {
-    color: black;
-    max-width: 30em;
-    margin: auto;
+/* SITE ID */
+.site-id h1 {
+    margin: 0;
 }
 
-ul {
-    text-align: left;
-    margin: auto;
+/* SITE NAV */
+.site-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-a {
-    color:lightcoral
+.site-nav a {
+    display: block;
+    padding: 1em;
+}
+
+/* MAIN */
+main {
+    background: rgba(0,0,0,.05);
+}
+
+/* FOOTER */
+footer {
+    border-top: 1px solid rgba(0,0,0,.05);
+    padding: 1em;
+}
+
+/* SOCIAL NAV */
+.social-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-nav li {
+
+}
+
+.social-nav  a {
+    display: block;
+    padding: 1em;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: rgb(235, 156, 156);
+    color: rgba(255,255,255, .8);  
+    text-align: center;  
+    padding: 6em 1em;
+}
+
+.hero h2 {
+    font-size: 6em;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.hero p {
+    max-width: 30em;
+    text-align: left;
+    margin: 1em auto;
+}
+
+/* COURSES SECTION */
+.courses {
+    padding: 6em 1em;
+    display: grid;
+    justify-content: center;
+}
+
+.courses ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.courses h3 {
+    text-align: center;
 }
