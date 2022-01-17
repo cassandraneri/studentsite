@@ -3,7 +3,7 @@
 body { margin: 0;}
 
 /* GLOBAL COLORS */
-body { color: rgb(30, 31, 31)}
+body { color: rgba(0,0,0,.8)}
 a { color: rgba(240,128,128)}
 a:hover { color: rgb(235, 156, 156)}
 
@@ -58,10 +58,40 @@ main {
     background: rgba(0,0,0,.05);
 }
 
+section {
+    padding: 3em 1em;
+}
+
 /* FOOTER */
 footer {
     border-top: 1px solid rgba(0,0,0,.05);
     padding: 1em;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .two-col-sidebar {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    } 
+    .two-col-sidebar aside {
+        border-right: 1px solid rgba(0,0,0,.1);
+        margin: 0 3em 2em 0;
+        padding: .3em 2em 0 0;
+    }      
+}
+
+aside {
+    padding: 0 1em;
+}
+
+.primary {
+    padding: 0 1em;
 }
 
 /* SOCIAL NAV */
@@ -95,7 +125,7 @@ footer {
 
 .hero p {
     max-width: 30em;
-    text-align: left;
+    text-align: center;
     margin: 1em auto;
 }
 
@@ -115,3 +145,56 @@ footer {
 .courses h3 {
     text-align: center;
 }
+
+/* STYLING FOR SUB PAGES */
+.page-sub .hero {
+    background-color: rgba(0,0,0,.1);
+    color: rgba(0,0,0,.8)
+}
+
+/* COURSE WORK SECTION */
+.coursework {
+    padding: 6em 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects {
+    margin: 2em;
+}
+
+/* CODE BLOCKS */
+pre code {
+    width: 100%;
+    display: block;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+  }
+
+.markup-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+}
+
+/* DEFINITION LISTS */
+dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+dd {
+    margin: 0;
+}
+
+/* FOR DEV PURPOSES */
+/* body * {
+    background-color: rgba(0,0,0,.05) !important;
+    border: 1px solid rgba(0,0,0,.1) !important;
+    color: rgba(0,0,0,.5) !important;
+} */
