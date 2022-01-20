@@ -150,6 +150,16 @@ aside {
     text-align: center;
 }
 
+/* CUSTOM NAV HOVER */
+.hover-nav a {
+border-bottom: 2px solid rgba(255,255,255,0);
+  margin: 1em;
+  transition: .4s all ease-out;
+}
+.hover-nav a:hover {
+  border-bottom: 2px solid rgba(255,255,255,1);
+}
+
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
     background-color:rgb(235, 156, 156);
