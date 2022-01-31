@@ -9,7 +9,7 @@ a:hover { color: rgb(235, 156, 156)}
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family: Helvetica, Arial, Sans-serif;
+    font-family: Apparel Black, Arial, Montserrat;
     font-size: 88.75%; /* 14px */
     line-height: 1.4;
 }
@@ -53,6 +53,7 @@ header a:hover {
 }
 
 .site-nav a {
+    font-family: Montserrat;
     display: block;
     padding: 1em;
 }
@@ -121,14 +122,15 @@ aside {
 }
 
 .hero h2 {
-    font-size: 5em;
+    font-family: "Apparel Black";
+    font-size: 3em;
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
 }
 
 .hero p {
-    max-width: 30em;
+    font-family: Montserrat;
     text-align: center;
     margin: 1em auto;
 }
@@ -151,13 +153,15 @@ aside {
 }
 
 /* CUSTOM NAV HOVER */
-.hover-nav a {
-border-bottom: 2px solid rgba(255,255,255,0);
-  margin: 1em;
-  transition: .4s all ease-out;
+.hover-nav a { 
+    padding: 1em;
+    display: block;
 }
 .hover-nav a:hover {
-  border-bottom: 2px solid rgba(255,255,255,1);
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    transition: 200ms ease;
+    transform: scale(1.2);
 }
 
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
