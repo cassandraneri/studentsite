@@ -183,6 +183,7 @@ aside {
     line-height:1vh;
     max-width: 1000px;
     padding: 2em 1em;
+    margin-bottom: 50px;
 }
 
 p {
@@ -215,7 +216,7 @@ p {
         opacity: 0;
     }
     100%{
-        opacity: .6;
+        opacity: 1;
     }
     0%{
         transform: translateY(1.2em);
@@ -233,6 +234,7 @@ p {
     background-position: center;
     background-size: cover;
     padding: 30vh 1em 20vh 1em;
+    color: rgb(255, 255, 255);
 }
 
 .page-home header {
