@@ -178,7 +178,7 @@ aside {
 .animation h2 {
     animation-name: spacing;
     display: block;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 .animation p {
@@ -186,7 +186,7 @@ aside {
     animation-delay: .2s;
     animation-fill-mode: forwards;
     display: block;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     line-height:1vh;
     max-width: 1000px;
     padding: 2em 1em;
