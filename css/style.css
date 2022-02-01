@@ -125,8 +125,9 @@ aside {
 
 .hero h2 {
     text-align: center;
+    letter-spacing: 4.3px;
     font-family: "Apparel Black";
-    font-size: 3em;
+    font-size: 3.2em;
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
@@ -134,6 +135,7 @@ aside {
 
 .hero p {
     font-family: Montserrat;
+    line-height: 1.8;
     text-align: center;
     margin: 1em auto;
 }
