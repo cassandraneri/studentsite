@@ -122,6 +122,7 @@ aside {
 }
 
 .hero h2 {
+    text-align: center;
     font-family: "Apparel Black";
     font-size: 3em;
     line-height: 1;
@@ -162,6 +163,63 @@ aside {
     text-decoration: none;
     transition: 200ms ease;
     transform: scale(1.2);
+}
+
+/* ANIMATION */
+
+
+.animation h2 {
+    animation-name: spacing;
+    display: block;
+    animation-duration: 1s;
+}
+
+.animation p {
+    animation-name: fade-in;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+    display: block;
+    animation-duration: 1s;
+    line-height:1vh;
+    max-width: 1000px;
+    padding: 2em 1em;
+}
+
+p {
+    margin: 0.5em 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-inline-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@keyframes spacing {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    0%{
+        transform: translateY(0.5em);
+    }
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: .6;
+    }
+    0%{
+        transform: translateY(1.2em);
+    }
 }
 
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
