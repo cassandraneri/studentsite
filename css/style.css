@@ -115,6 +115,19 @@ aside {
     padding: 1em;
 }
 
+.social-nav a:hover,
+footer a:hover {
+color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    transition: 200ms ease;
+    transform: scale(1.2);
+}
+
+.social-nav a {
+    padding: 1em;
+    display: block;
+}
+
 /* HERO SECTION */
 .hero {
     background-color: rgb(235, 156, 156);
@@ -259,6 +272,38 @@ p {
 
 .projects {
     margin: 2em;
+}
+
+/* FOOTER SECTION */
+.social-nav a {
+    padding: 1em;
+    display: block;
+}
+
+.social-nav footer a {
+    color: rgba(255, 255, 255, .8);
+    transition: 200ms ease;
+    position: relative;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.site-nav ul {
+    list-style: none;
+}
+
+.fa-codepen:before {
+    content: "\f1cb";
 }
 
 /* CODE BLOCKS */
