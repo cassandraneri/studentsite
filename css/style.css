@@ -101,6 +101,7 @@ aside {
 
 /* SOCIAL NAV */
 .social-nav ul {
+    font-family: Montserrat;
     display: flex;
     justify-content: center;
     list-style: none;
@@ -109,6 +110,7 @@ aside {
 }
 
 .social-nav  a {
+    font-family: Montserrat;
     display: clock;
     padding: 1em;
 }
@@ -138,18 +140,21 @@ aside {
 
 /* COURSES SECTION */
 .courses {
+    font-family: Montserrat;
     padding: 6em 1em;
     display: grid;
     justify-content: center;
 }
 
 .courses ul {
+    font-family: Montserrat;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .courses h3 {
+    font-family: Montserrat;
     text-align: center;
 }
 
