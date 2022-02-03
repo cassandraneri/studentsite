@@ -5,11 +5,11 @@ body { margin: 0;}
 /* GLOBAL COLORS */
 body { color: rgba(0,0,0,.8)}
 a { color: black}
-a:hover { color: rgb(235, 156, 156)}
+a:hover { color: rosybrown}
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family: Apparel Black, Arial, Montserrat;
+    font-family: Apparel Black, Montserrat, Arial;
     font-size: 88.75%; /* 14px */
     line-height: 1.4;
 }
@@ -21,7 +21,7 @@ a, a:hover, a:focus, a:active {
 /* HEADER */
 
 header {
-    background-color: rgb(235, 156, 156);
+    background-color: rosybrown;
     color: rgba(255,255,255, .8);
     padding: 1em;
     display: grid;
@@ -148,7 +148,7 @@ color: rgba(255, 255, 255, .5);
 
 .hero p {
     font-family: Montserrat;
-    line-height: 1.5;
+    line-height: 1.4;
     text-align: center;
     margin: 1em auto;
 }
@@ -244,15 +244,20 @@ p {
 
 /* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
-    background-color:rgb(235, 156, 156);
-    color: rgba(0,0,0,.8)
+    /* background-color: rgb(235, 156, 156);
+    color: rgba(0,0,0,.8); */
+    background-image: url('../img/nathan-dumlao-7tcXsqyhpWc-unsplash.jpg');
+    background-position: center;
+    background-size: contain;
+    padding: 15vh 1em 20vh 1em;
+    color: rgb(255, 255, 255);
 }
 
 .page-home .hero {
     background-image: url('../img/nathan-dumlao-7tcXsqyhpWc-unsplash.jpg');
     background-position: center;
     background-size: cover;
-    padding: 30vh 1em 20vh 1em;
+    padding: 25vh 1em 20vh 1em;
     color: rgb(255, 255, 255);
 }
 
@@ -281,13 +286,13 @@ p {
 }
 
 .social-nav footer a {
-    color: rgba(255, 255, 255, .8);
     transition: 200ms ease;
     position: relative;
 }
 
 .fab {
     font-family: "Font Awesome 5 Brands";
+    color: rgba(0,0,0,.8);
 }
 
 * {
@@ -314,7 +319,7 @@ pre code {
     background-color: #fff;
     padding: 1em 3em;
     margin-bottom: 1em;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
 .markup-box {
