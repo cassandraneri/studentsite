@@ -229,7 +229,7 @@ body.demo::before {
 /* SEMANTIC GRID SYSTEM */
 
 .row > .column {
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
 
 @media (min-width: 768px) {
@@ -243,8 +243,8 @@ body.demo::before {
 
     .row > .column {
         flex-grow: 1;
-        margin-left: 1%;
-        margin-right: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .row > .column.one-half {
@@ -275,4 +275,67 @@ body.demo::before {
     background: rgba(0,0,0,.2);
     padding: 1em;
     text-align: center;
+}
+
+/* SITE STRUCTURE */
+
+.container {
+    border: 2px solid red;
+}
+
+/* SITE HEADER */
+.site-header {
+    background-color: rgba(255,0,0,.2);
+}
+
+/* STYLING FOR BOTH HEADER AND FOOTER */
+.site-header a, 
+.site-footer a {
+    color: rgba(0,0,0,.8)
+}
+
+.site-header a:hover
+.site-footer a:hover {
+    color: rgba(0,0,0,1);
+    text-decoration: none;
+}
+
+/* LOGO AREA */
+.site-id h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* SITE NAV */
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.site-nav li {
+    background-color: rgba(0,255,255,.5);
+    border: 1px solid green;
+}
+
+.site-nav a {
+    padding: 1em;
+    display: block;
+}
+
+/* SITE MAIN */
+.site-main {
+    background-color: rgba(0,255,0,.2);
+}
+
+/* SITE FOOTER */
+.site-footer {
+    background-color: rgba(0,0,255,.2);
+}
+
+/* HERO */
+.hero {
+    background-color: rgba(255,255,.2);
 }
