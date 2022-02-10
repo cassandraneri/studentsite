@@ -322,6 +322,7 @@ pre code {
     padding: 1em 3em;
     margin-bottom: 1em;
     line-height: 1.4;
+    white-space: pre-wrap;
   }
 
 .markup-box {
