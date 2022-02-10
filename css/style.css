@@ -21,12 +21,14 @@ a, a:hover, a:focus, a:active {
 /* HEADER */
 
 header {
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     color: rgba(255,255,255, .8);
     padding: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;;
     align-items: center;
+    position: absolute;
+    width: 100%;
 }
 
 header a {
@@ -198,7 +200,7 @@ color: rgba(255, 255, 255, .5);
     animation-fill-mode: forwards;
     display: block;
     animation-duration: 1.5s;
-    line-height:1vh;
+    line-height: 1.5;
     max-width: 1000px;
     padding: 2em 1em;
     margin-bottom: 50px;
@@ -248,7 +250,7 @@ p {
     color: rgba(0,0,0,.8); */
     background-image: url('../img/nathan-dumlao-7tcXsqyhpWc-unsplash.jpg');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     padding: 15vh 1em 20vh 1em;
     color: rgb(255, 255, 255);
 }
