@@ -128,31 +128,31 @@ img {
 button {
     font-size: inherit;
     line-height: 1;
-    background-color: rgba(0,0,255,1);
-    border: 1px solid rgba(0,0,255,1);
+    background-color: rosybrown;
+    border: 1px solid rosybrown;
     color: rgba(255,255,255,1);    
     padding: 1em;
     display: inline-block;
-    margin: .5em;
+    margin: .5em .5em .5em 0;
     text-align: center;
     border-radius: .5em;
 }
 
 .button:hover,
 button:hover {
-    background-color: rgba(0,0,153,1);
-    border-color: rgba(0,0,153,1);
+    background-color: rgb(218,175,175);
+    border-color: rgb(218,175,175);
     color: rgba(255,255,255,1);    
     text-decoration: none;
 }
 
 .button.alt {
     background-color: transparent;
-    color: rgba(0,0,153,1);
+    color: rosybrown;
 }
 
 .button.alt:hover {
-    background-color: rgba(0,0,153,1);
+    background-color: rgb(218,175,175);
     color: rgba(255,255,255,1);
 }
 
@@ -279,13 +279,17 @@ body.demo::before {
 
 /* SITE STRUCTURE */
 
-.container {
-    border: 2px solid red;
-}
-
 /* SITE HEADER */
 .site-header {
-    background-color: rgba(255,0,0,.2);
+    padding: 1em 0;
+}
+
+/* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
+@media (min-width: 768px) { 
+    .site-header .container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 /* STYLING FOR BOTH HEADER AND FOOTER */
@@ -301,12 +305,16 @@ body.demo::before {
 }
 
 /* LOGO AREA */
+
 .site-id h1 {
     font-size: 1.5em;
     margin: 0;
+    padding-top: .55em;
+    text-align: center;
 }
 
 /* SITE NAV */
+
 .site-nav ul {
     margin: 0;
     padding: 0;
@@ -315,27 +323,26 @@ body.demo::before {
     justify-content: center;
 }
 
-.site-nav li {
-    background-color: rgba(0,255,255,.5);
-    border: 1px solid green;
-}
-
 .site-nav a {
     padding: 1em;
     display: block;
 }
 
-/* SITE MAIN */
-.site-main {
-    background-color: rgba(0,255,0,.2);
-}
-
-/* SITE FOOTER */
-.site-footer {
-    background-color: rgba(0,0,255,.2);
+/* SECTIONS */
+section {
+    padding: 3em 0;
 }
 
 /* HERO */
+
 .hero {
-    background-color: rgba(255,255,.2);
+    padding: 6em 4%;
+    background-color: rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.hero h1, p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
