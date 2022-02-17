@@ -136,7 +136,7 @@ footer a:hover {
 }
 
 .hero h2 {
-    font-family: Hafidz;
+    font-family: Hafidz, Baskerville-URW;
     text-align: center;
     letter-spacing: 4.3px;
     font-size: 3.2em;
@@ -259,6 +259,16 @@ p {
     background-color: transparent;
     position: absolute;
     width: 100%;
+}
+
+/* CUSTOM FONT STYLING */
+
+@font-face {
+    font-family: Hafidz;
+    src: url(../fonts/Hafidz.otf);
+    src: url(../fonts/Hafidz.ttf);
+    src: url(../fonts/Hafidz.woff);
+    src: url(../fonts/Hafidz.woff2);
 }
 
 /* COURSE WORK SECTION */
