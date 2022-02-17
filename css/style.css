@@ -9,7 +9,7 @@ a:hover { color: rosybrown}
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family: Apparel Black, Montserrat, Arial;
+    font-family:  Montserrat, sans-serif;
     font-size: 88.75%; /* 14px */
     line-height: 1.4;
 }
@@ -55,7 +55,7 @@ header a:hover {
 }
 
 .site-nav a {
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     display: block;
     padding: 1em;
 }
@@ -103,7 +103,7 @@ aside {
 
 /* SOCIAL NAV */
 .social-nav ul {
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     display: flex;
     justify-content: center;
     list-style: none;
@@ -112,14 +112,14 @@ aside {
 }
 
 .social-nav  a {
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     display: clock;
     padding: 1em;
 }
 
 .social-nav a:hover,
 footer a:hover {
-color: rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .5);
     text-decoration: none;
     transition: 200ms ease;
     transform: scale(1.2);
@@ -141,7 +141,7 @@ color: rgba(255, 255, 255, .5);
 .hero h2 {
     text-align: center;
     letter-spacing: 4.3px;
-    font-family: "Apparel Black";
+    /* font-family: "Braisetto"; */
     font-size: 3.2em;
     line-height: 1;
     text-transform: uppercase;
@@ -149,7 +149,7 @@ color: rgba(255, 255, 255, .5);
 }
 
 .hero p {
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     line-height: 1.4;
     text-align: center;
     margin: 1em auto;
@@ -157,21 +157,21 @@ color: rgba(255, 255, 255, .5);
 
 /* COURSES SECTION */
 .courses {
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     display: grid;
     padding: 6em 1em;
     justify-content: center;
 }
 
 .courses ul {
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .courses h3 {
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     text-align: center;
 }
 
@@ -248,7 +248,7 @@ p {
 .page-sub .hero {
     /* background-color: rgb(235, 156, 156);
     color: rgba(0,0,0,.8); */
-    background-image: url('../img/nathan-dumlao-7tcXsqyhpWc-unsplash.jpg');
+    background-image: url('../img/annie-spratt-9PXRUfRIH2A-unsplash.jpg');
     background-position: center;
     background-size: cover;
     padding: 15vh 1em 20vh 1em;
@@ -256,7 +256,7 @@ p {
 }
 
 .page-home .hero {
-    background-image: url('../img/nathan-dumlao-7tcXsqyhpWc-unsplash.jpg');
+    background-image: url('../img/annie-spratt-9PXRUfRIH2A-unsplash.jpg');
     background-position: center;
     background-size: cover;
     padding: 25vh 1em 20vh 1em;
@@ -293,7 +293,7 @@ p {
 }
 
 .fab {
-    font-family: "Font Awesome 5 Brands";
+    /* font-family: "Montserrat"; */
     color: rgba(0,0,0,.8);
 }
 
