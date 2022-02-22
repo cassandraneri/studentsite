@@ -93,12 +93,12 @@ em {
 
 /* LINKS */
 a {
-    color: rgba(0,0,153,.8);
+    color: rosybrown;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgba(0,0,153,1);
+    color: rgb(218,175,175);
     text-decoration: underline;
 }
 
@@ -185,6 +185,7 @@ button:hover {
 body {margin: 0; }
 
 /* CONTAINER */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -322,7 +323,7 @@ body.demo::before {
 
 .site-header a:hover
 .site-footer a:hover {
-    color: rgba(0,0,0,1);
+    color: rosybrown;
     text-decoration: none;
 }
 
@@ -333,6 +334,16 @@ body.demo::before {
     margin: 0;
     padding-top: .55em;
     text-align: center;
+}
+
+.site-id h1 a:hover {
+    text-decoration: none;
+}
+
+.site-id h1 .b {
+    font-weight: normal;
+    text-decoration: none;
+    color: rgb(0 0 0 / .4);
 }
 
 /* SITE NAV */
@@ -348,7 +359,12 @@ body.demo::before {
 .site-nav a {
     padding: 1em;
     display: block;
+    text-decoration: none;
 }
+
+.site-nav a:hover {
+    color: rosybrown;
+}    
 
 .site-nav .menu-button {
     display: none;
@@ -363,15 +379,29 @@ section {
 
 .hero {
     padding: 6em 4%;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgb(0 0 0 / .1);
     text-align: center;
 }
+  
+.hero {
+    background: #ddd;
+    border-top: none;
+    padding: 4em 1em 3em 1em;
+    margin-bottom: 1.5em;
+}
 
-.hero p{
+.hero.text-centered p {
     max-width: 22em;
 }
 
-p {
+.hero h1,
+.hero h2 {
+  font-size: 3em;
+  line-height: 1.1em;
+}
+
+.hero h1, p {
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -413,6 +443,71 @@ p {
         height: auto;
         overflow: visible;
     }
+
+/* ANIMATED TOGGLE-MAV MENU */
+
+@media (max-width: 767px) {
+    .toggle-nav.animated ul {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      padding: 0;
+      border-width: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .toggle-nav.animated[data-navstate=open] ul {
+      max-height: 138em;
+      opacity: 1;
+      padding: 0.5em 0;
+      border-width: 0px;
+      transition: all 0.6s ease;
+    }
+  
+    .toggle-nav.animated li {
+      padding: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .toggle-nav.animated[data-navstate=open] li {
+      padding: 0.25em;
+      opacity: 1;
+      transition: all 0.6s ease 0.2s;
+    }
+  
+    .toggle-nav.animated li a {
+      padding: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .toggle-nav.animated[data-navstate=open] li a {
+      padding: 0.75em;
+    }
+
+    .menu-button {
+        cursor: pointer;
+        display: flex;
+        background: transparent;
+        border-color: transparent;
+        font-size: inherit;
+        font-family: inherit;
+    }
+
+    .menu-button:after {
+        content: "\2630";
+        font-size: 1.5em;
+        transition: all 0.2s ease-out;
+    }
+
+    [data-navstate="open"]
+    .menu-button:after {
+    content: "\2715";
+    transform: rotate(-90deg);
+    }
+
+}
 
 /* NAVICON */
 .toggle-nav .site-nav .menu-button.navicon {
@@ -489,8 +584,99 @@ article p:first-of-type:first-letter {
     float: left;
 }
 
-/* FORMS */
+  /* FORMS */
 
-form {
-    
+  form {
+    max-width: 600px;
+    margin: 2em auto;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  form label,
+  form input,
+  form textarea {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      font-size: 1em;
+  }
+  
+  form label {
+      margin-top: 2em;
+      margin-bottom: .25em;
+  }
+  
+  form input[type="text"],
+  form textarea {
+      border: 1px solid #ccc;
+      padding: .5em;
+      color: #666;
+  }
+  
+  form textarea {
+      min-height: 10em;
+      line-height: 1.5em;
+  }
+  
+  form input[type="submit"] {
+    font-size: inherit;
+    line-height: 1;
+    background-color: rosybrown;
+    border: 1px solid rosybrown;
+    color: rgb(255 255 255 / 1);
+    padding: 1em;
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+    text-align: center;
+    border-radius: 0.5em;
+    margin-top: 1.5em;
+    width: auto;
+  }
+  
+  /* CUSTOM SITE CSS */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin: .5em auto;
+    border-bottom: 3px solid rgb(0 0 0 / .2);
+}
+
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+}
+
+.site-header.sticky + main {
+    padding-top: 3em;
+}
+
+#about {
+    background: rgb(0 0 0 / .05);
+}
+
+#contact {
+    background: rgb(0 0 0 / .1);
+}
+
+.site-header {
+    background: rgb(255 255 255);
+    padding-bottom: .4em;
+}
+
+/* VERTICAL MEDIA QUERY add height/padding to bottom of contact section only for lg screens - credit to Romina for this idea */
+
+@media (min-height: 600px) {
+    #contact {
+        padding-bottom: 20em;
+    }
 }
