@@ -9,7 +9,7 @@ a:hover { color: rosybrown}
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family:  Montserrat, sans-serif;
+    font-family: Futura PT, sans-serif;
     font-size: 88.75%; /* 14px */
     line-height: 1.4;
 }
@@ -282,10 +282,12 @@ p {
 .projects {
     margin: 2em;
     list-style: none;
+    line-height: 1.2;
 }
 
-.projects h3 {
-    color: rosybrown;
+.projects h4 {
+    font-weight: bold;
+    font-size: 100%;
 }
 
 .unicode li {
