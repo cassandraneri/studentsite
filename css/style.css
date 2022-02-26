@@ -273,7 +273,7 @@ p {
 
 /* COURSE WORK SECTION */
 .coursework {
-    padding: 6em 1em;
+    padding: 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
