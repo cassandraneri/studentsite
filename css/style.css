@@ -281,6 +281,23 @@ p {
 
 .projects {
     margin: 2em;
+    list-style: none;
+}
+
+.projects h3 {
+    color: rosybrown;
+}
+
+.unicode li {
+    list-style: none;
+}
+
+.unicode li::before {
+    content: '→';
+    margin-right: 0.35em;
+    margin-left: -2em;
+    padding: 0.2em;
+    display: inline-block;
 }
 
 /* FOOTER SECTION */

@@ -93,12 +93,12 @@ em {
 
 /* LINKS */
 a {
-    color: rosybrown;
+    color: rgba(0,0,153,.8);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(218,175,175);
+    color: rgba(0,0,153,1);
     text-decoration: underline;
 }
 
@@ -147,7 +147,7 @@ img {
 
 /* BUTTONS */
 .button,
-button, form input[type="submit"] {
+button {
     font-size: inherit;
     line-height: 1;
     background-color: rosybrown;
@@ -161,7 +161,7 @@ button, form input[type="submit"] {
 }
 
 .button:hover,
-button:hover, form input[type="submit"]:hover {
+button:hover {
     background-color: rgb(218,175,175);
     border-color: rgb(218,175,175);
     color: rgba(255,255,255,1);    
@@ -170,7 +170,7 @@ button:hover, form input[type="submit"]:hover {
 
 .button.alt {
     background-color: transparent;
-    color: rgb(218,175,175);
+    color: rosybrown;
 }
 
 .button.alt:hover {
@@ -185,7 +185,6 @@ button:hover, form input[type="submit"]:hover {
 body {margin: 0; }
 
 /* CONTAINER */
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -318,12 +317,13 @@ body.demo::before {
 /* STYLING FOR BOTH HEADER AND FOOTER */
 .site-header a, 
 .site-footer a {
-    color: rgba(0,0,0,.8)
+    color: rgba(0,0,0,.8);
+    text-decoration: none;
 }
 
 .site-header a:hover
 .site-footer a:hover {
-    color: rosybrown;
+    color: rgba(0,0,0,1);
     text-decoration: none;
 }
 
@@ -334,16 +334,6 @@ body.demo::before {
     margin: 0;
     padding-top: .55em;
     text-align: center;
-}
-
-.site-id h1 a:hover {
-    text-decoration: none;
-}
-
-.site-id h1 .b {
-    font-weight: normal;
-    text-decoration: none;
-    color: rgb(0 0 0 / .4);
 }
 
 /* SITE NAV */
@@ -359,7 +349,6 @@ body.demo::before {
 .site-nav a {
     padding: 1em;
     display: block;
-    text-decoration: none;
 }
 
 .site-nav a:hover {
@@ -379,29 +368,15 @@ section {
 
 .hero {
     padding: 6em 4%;
-    background-color: rgb(0 0 0 / .1);
+    background-color: rgba(0,0,0,.1);
     text-align: center;
 }
-  
-.hero {
-    background: #ddd;
-    border-top: none;
-    padding: 4em 1em 3em 1em;
-    margin-bottom: 1.5em;
-}
 
-.hero.text-centered p {
+.hero p{
     max-width: 22em;
 }
 
-.hero h1,
-.hero h2 {
-  font-size: 3em;
-  line-height: 1.1em;
-}
-
-.hero h1, p {
-    max-width: 600px;
+p {
     margin-left: auto;
     margin-right: auto;
 }
@@ -418,7 +393,6 @@ section {
     .toggle-nav .site-nav .menu-button {
         display: block;
         display: inline-block;
-        background-color: transparent;
         cursor: pointer;
         padding: .3em .8em;
         margin-bottom: .8em;
@@ -444,71 +418,6 @@ section {
         height: auto;
         overflow: visible;
     }
-
-/* ANIMATED TOGGLE-MAV MENU */
-
-@media (max-width: 767px) {
-    .toggle-nav.animated ul {
-      display: block;
-      max-height: 0;
-      overflow: hidden;
-      opacity: 0;
-      padding: 0;
-      border-width: 0;
-      transition: all 0.3s ease;
-    }
-  
-    .toggle-nav.animated[data-navstate=open] ul {
-      max-height: 138em;
-      opacity: 1;
-      padding: 0.5em 0;
-      border-width: 0px;
-      transition: all 0.6s ease;
-    }
-  
-    .toggle-nav.animated li {
-      padding: 0;
-      opacity: 0;
-      transition: all 0.3s ease;
-    }
-  
-    .toggle-nav.animated[data-navstate=open] li {
-      padding: 0.25em;
-      opacity: 1;
-      transition: all 0.6s ease 0.2s;
-    }
-  
-    .toggle-nav.animated li a {
-      padding: 0;
-      transition: all 0.3s ease;
-    }
-  
-    .toggle-nav.animated[data-navstate=open] li a {
-      padding: 0.75em;
-    }
-
-    .menu-button {
-        cursor: pointer;
-        display: flex;
-        background: transparent;
-        border-color: transparent;
-        font-size: inherit;
-        font-family: inherit;
-    }
-
-    .menu-button:after {
-        content: "\2630";
-        font-size: 1.5em;
-        transition: all 0.2s ease-out;
-    }
-
-    [data-navstate="open"]
-    .menu-button:after {
-    content: "\2715";
-    transform: rotate(-90deg);
-    }
-
-}
 
 /* NAVICON */
 .toggle-nav .site-nav .menu-button.navicon {
@@ -585,13 +494,9 @@ article p:first-of-type:first-letter {
     float: left;
 }
 
-.unicode li {
-    list-style: none;
-}
+ /* FORMS */
 
-  /* FORMS */
-
-  form {
+ form {
     max-width: 600px;
     margin: 2em auto;
   }
@@ -629,6 +534,14 @@ article p:first-of-type:first-letter {
   form input[type="submit"] {
     margin-top: 1.5em;
     width: auto;
+    background-color: rosybrown;
+    border: 1px solid rosybrown;
+    color: rgba(255,255,255,1);  
+    padding: .8em;
+    display: inline-block;
+    margin: .5em .5em .5em 0;
+    text-align: center;
+    border-radius: .5em;
   }
   
   /* CUSTOM SITE CSS */

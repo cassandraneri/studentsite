@@ -32,7 +32,7 @@
 
 body {
     font-size: 87.5%; /* 14px */
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Proxima Nova, sans-serif;
     line-height: 1.4;
     color: rgba(0,0,0,.8);
 }
@@ -583,10 +583,6 @@ article p:first-of-type:first-letter {
     padding: .2em .4em;
     margin-right: .3em;
     float: left;
-}
-
-.unicode li {
-    list-style: none;
 }
 
   /* FORMS */

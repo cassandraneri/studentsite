@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Site Name | Single Page Site</title>
+    <meta name="description" content="This is a starter HTML + CSS + JS boilerplate set of code for website projects." />
+
+    <!-- FOR MOBILE / SMALL SCREENS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FOR IE/EDGE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body id="top">
+
+    <header class="site-header toggle-nav animated sticky">
+        <div class="container">
+            <div class="site-id">
+                <h1>
+                    <a href="#top" class="scroll">Site Name</a>
+                    <a class="b">/ Single Page Site</a>
+                </h1>
+            </div>
+            <nav class="site-nav">
+                <button class="menu-button navicon">Menu</button>
+                <ul class="animated">
+                    <li class="animated"><a class="scroll" href="#top">Home</a></li>
+                    <li class="animated"><a class="scroll" href="#about">About</a></li>
+                    <li class="animated"><a class="scroll" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    <!-- END CONTAINER -->
+</header>  
+
+<main class="site-main">
+    <section class="hero text-centered">
+        <div class="container">
+            <h1>Hero Section</h1>
+            <p>This is the top hero section of a single-page site.</p>
+            <a href="#about" class="button scroll">About Us</a>
+            <a href="#contact" class="button alt scroll">Contact Us</a>
+        </div>
+        <!-- END CONTAINER -->
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="column one-third">
+                    <img src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500" />
+                    <h3>Our History</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem nisi blanditiis iste quas impedit aut repellat quaerat? Amet, quam.</p>
+                    <a href="#" class="button">ABOUT US</a>
+                </div>      
+                <div class="column one-third">
+                    <img src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500" />
+                    <h3>Contact Info</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem nisi blanditiis iste quas impedit aut repellat quaerat? Amet, quam.</p>
+                    <a href="#" class="button">GET IN TOUCH</a>
+                </div>
+                <div class="column one-third">
+                    <img src="img/placeholder-1x1.gif" alt="Square 1x1 Placeholder Image" width="1500" height="1500" />
+                    <h3>Directions</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem nisi blanditiis iste quas impedit aut repellat quaerat? Amet, quam.</p>
+                    <p>
+                        <a href="#" class="button">VIEW MAP</a>
+                    </p>
+                </div>          
+            </div>
+        </div>
+        <!-- END CONTAINER -->
+        </section>
+
+        <section id="about">
+            <div class="container">
+
+                <h3 class="section-title">About Us</h3>
+
+                <article>
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    
+                    <h2 class="subhead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ultrices augue vitae purus sodales eleifend.</h2>
+    
+                    <div class="date">Date MM/DD/YYYY</div>
+    
+                    <p>Sed faucibus egestas ultricies. Vivamus enim auctor hendrerit elit. Morbi facilisis tempus orci, sed placerat metus auctor non. Etiam non lacus erat, sit amet porttitor tellus. Curabitur pretium tincidunt tortor in vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi quam eros, bibendum ut pellentesque id, tristique eget lacus. Ut fermentum ligula vitae est luctus at iaculis nunc placerat.</p>
+    
+                    <p>Vestibulum urna erat, viverra in dignissim quis, bibendum lobortis sapien. Integer porttitor magna ut orci aliquam sed suscipit eros adipiscing. Pellentesque feugiat mi id eros placerat sit amet hendrerit tortor ultricies. Praesent pellentesque lorem eget ligula egestas sit amet elementum lacus dignissim. Duis semper sapien id massa vehicula quis malesuada est molestie. Vestibulum ac nunc in metus egestas sodales. In dignissim luctus eros, non facilisis nisi vulputate vulputate. Cras bibendum venenatis ipsum, sed euismod quam rhoncus rhoncus. Nullam consectetur augue ac mi convallis nec tempor odio pellentesque.</p>
+
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h3 class="section-title">Contact</h3>
+
+                <form>
+                    <p>4303 Diamond Head Road</p> 
+                    <p>Honolulu, HI 96816</p>
+                    <a href="#">(808)123-4567</a>
+                    <label for="contact_name">Name:</label>
+                    <input type="text" id="contact_name" name="contact_name" />
+          
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="contact_email" name="contact_email" />
+          
+                    <label for="contact_message">Message:</label>
+                    <textarea id="contact_message" name="contact_message"></textarea>
+          
+                    <input type="submit" value="Submit" />
+
+                  </form>
+            </div>
+        </section>
+    
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <nav class="site-nav">
+            <ul>
+                <li><a class="scroll" href="#top">Home</a></li>
+                <li><a class="scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- END CONTAINER -->
+</footer>
+
+    <!-- SCROLL JS FILE -->
+    <script src="js/scroll.js"></script>  
+
+    <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
