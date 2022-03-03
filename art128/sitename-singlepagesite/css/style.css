@@ -305,6 +305,7 @@ body.demo::before {
 /* SITE HEADER */
 .site-header {
     padding: 1em 0;
+    z-index: 100;
 }
 
 /* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
