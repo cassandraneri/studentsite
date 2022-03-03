@@ -553,6 +553,7 @@ article h2.subhead {
 article .subhead {
     font-weight: normal;
     opacity: .7;
+    z-index: 100;
 }
 
 article .date {
