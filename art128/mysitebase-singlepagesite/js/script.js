@@ -1,24 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-/* TOGGLE NAV MOBILE MENU FOR SMALL SCREENS */
-const menubuton = document.querySelector('.menu-button');
-const menunav = document.querySelector('.toggle-nav');
-menubuton.addEventListener('click', function() {
-   if (menunav.getAttribute('data-navstate') === 'open') {
-       /* if true do this */
-       menunav.setAttribute('data-navstate', 'closed');
-   } else {
-       /* else (if false) do this */
-       menunav.setAttribute('data-navstate', 'open');
-   };
+    //TOGGLE NAV MOBILE MENU
+    const menubutton = document.querySelector('.menu-button');
+    const menunav = document.querySelector('.toggle-nav');
+    menubutton.addEventListener('click', function() {
+        if (menunav.getAttribute('data-navstate') === 'open') {
+            // if true do this
+            menunav.setAttribute('data-navstate', 'closed');
+        } else {
+            //else (if false) do this:
+            menunav.setAttribute('data-navstate', 'open');
+        };
+
 });
 
-/* STICKY NAV SCROLL LINKS FOR SINGLE PAGE SITES */
-var acc = document.querySelectorAll('.accordian');
-var i;
-for (i = 0; i < acc.length; i++) {
-    acc[i].getElementsByTagName('h4')[0].onclick = function () {
-        this.parentElement.classList.toggle("open");
-    }
-}
+
+    //STICKY NAV LINKS TOGGLE MENU NAV
+    const stickynavlinks = document.querySelectorAll(".sticky nav a");
+    const stickyheader = document.querySelector(".sticky");
+    let j;
+    for (j = 0; j < stickynavlinks.length; j++) {
+        stickynavlinks[j].onclick = function () {
+            stickyheader.setAttribute('data-navstate', 'closed');
+        };
+    };
+
 });
