@@ -9,7 +9,7 @@ a:hover { color: rosybrown}
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family: Montserrat, Futura PT, sans-serif;
+    font-family: Futura PT, sans-serif;
     font-size: 88.75%; /* 14px */
     line-height: 1.4;
 }

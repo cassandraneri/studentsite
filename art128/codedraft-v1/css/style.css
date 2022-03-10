@@ -304,7 +304,10 @@ body.demo::before {
 
 /* SITE HEADER */
 .site-header {
-    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    margin-top: 0 auto;
     background-color: none;
     position: relative;
   }
@@ -315,7 +318,7 @@ body.demo::before {
   }
 
   .site-header .site-nav {
-    padding: 1em;
+    padding: 0;
   }
 
 /* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
@@ -382,9 +385,34 @@ body.demo::before {
 }
 
 /* SECTIONS */
+
 section {
-    padding: 3em 0;
-}
+    padding: 1em
+  }
+  
+  #contactus .content-wrapper {
+    display: flex;  
+    flex-direction: row-reverse;
+  }
+  
+  #contactus .image-wrapper {
+    margin-left: 20%;
+    margin-bottom: 20%;
+  }
+  
+  #contactus .text-wrapper {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  /* MAKE MY IMAGES RESPONSIVE */
+  #contactus .image-wrapper img {
+    max-width: 50%;
+    height: auto;
+  }
+  
 
 /* HERO */
 
