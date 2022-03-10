@@ -1,0 +1,696 @@
+/* #BASE CSS (Initital Setup)
+---------------------------------
+    #BASE CONTENT
+        #TYPOGRAPHY
+            #BODY
+            #HEADINGS
+            #PARAGRAPHS
+            #LINKS
+            #HELPERS
+        #MEDIA
+            #IMAGES
+        #COMPONENTS
+            #BUTTONS
+    #BASE LAYOUT
+        #SIMPLE RESET
+        #MEDIAQUERIES
+        #CONTAINER
+        #GRID SYSTEM
+            #CLEARFIX
+    #BASE SITE
+        #SITE STRUCTURE
+            #HEADER
+                # site-id (LOGO)
+            #FOOTER
+            #SECTIONS
+            #SUB PAGES
+        #SITE NAVIGATION
+            #TOGGLE-NAV (Default for Small Screens)
+--------------------------------- */
+
+/* TYPOGRAPHY */
+
+body {
+    font-size: 87.5%; /* 14px */
+    font-family: Proxima Nova, sans-serif;
+    line-height: 1.4;
+    color: rgba(0,0,0,.8);
+}
+
+/* HEADINGS */
+/*
+    Based on a Traditional Typographic Scale
+    48, 36, 24, 21, 18, 16
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    margin: .5em 0;
+}
+
+h1 {
+    font-size: 3em; /* 48px */
+    line-height: 1;
+}
+
+h2 {
+    font-size: 2.25em; /* 36px */
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5em; /* 24px */
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 1.3125em; /* 21px */
+    line-height: 1.3;
+}
+
+h5 {
+    font-size: 1.125em; /* 18px */
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 1em; /* 16px */
+    line-height: 1.5;
+}
+
+/* PARAGRAPHS */
+p {
+    margin: .5em 0;
+    max-width: 38em;
+}
+
+/* strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+} */
+
+/* LINKS */
+a {
+    color: rgb(195, 112, 38);
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(195, 112, 38);
+    text-decoration: underline;
+}
+
+/* HELPER CLASSES */
+.text-centered {
+    text-align: center;
+}
+
+.full-width {
+    max-width: none;
+    width: 100%;
+}
+
+.horiz-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+@media (min-width: 768px) {
+    .hidden-desktop {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+}
+
+.subheader {
+    color: #999;
+    margin-top: 1em;
+    font-style: normal;
+    font-weight: normal;
+    clear: both;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* BUTTONS */
+.button,
+button, form input[type="submit"] {
+    font-size: inherit;
+    line-height: 1;
+    background-color: rgb(195, 112, 38);
+    border: 1px solid rgb(195, 112, 38);
+    color: rgba(255,255,255,1);    
+    padding: 1em;
+    display: inline-block;
+    margin: .5em .5em .5em 0;
+    text-align: center;
+    border-radius: .5em;
+}
+
+.button:hover,
+button:hover, form input[type="submit"]:hover {
+    background-color: rgb(204, 141, 74);
+    border-color: rgb(204, 141, 74);
+    color: rgba(255,255,255,1);    
+    text-decoration: none;
+}
+
+.button.alt {
+    background-color: transparent;
+    color: rgb(195, 112, 38);
+}
+
+.button.alt:hover {
+    background-color: rgb(204, 141, 74);
+    color: rgba(255,255,255,1);
+}
+
+/* LAYOUT */
+
+/* SIMPLE RESET */
+* {box-sizing: border-box; }
+body {margin: 0; }
+
+/* CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+    /* TABLET SIZED STYLING GOES HERE */
+}
+
+@media (min-width: 1050px) {
+    body {
+        font-size: 100%; /* 16px */
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        font-size: 112.5%; /* 18px */
+    }
+    .container {
+        max-width: 1200px;
+    }
+} 
+
+/* FOR DEMO PURPOSES ONLY */
+body.demo {
+    padding-top: 2em;
+}
+body.demo::before {
+    content: "Small (Mobile) Less Than 768px";
+    background-color: #933;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    color: white;
+    padding: .5em;
+}
+
+@media (min-width: 768px) {
+    body.demo::before {
+        background-color: #bcb83d;
+        content: "Midsize (Tablet) Screen 768px - 1050px";
+    }
+}    
+
+@media (min-width: 1050px) {
+    body.demo::before {
+        background-color: #693;
+        content: "Large (Notebook) Screen 1050px - 1250px";
+    }
+}    
+
+@media (min-width: 1250px) {
+    body.demo::before {
+        background-color: #09c;
+        content: "Extra Large (Desktop) Screen 1250px +";
+    }
+}    
+
+/* SEMANTIC GRID SYSTEM */
+
+.row > .column {
+    margin-bottom: 4%;
+}
+
+@media (min-width: 768px) {
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -2%;
+        margin-right: -2%;
+    }
+
+    .row > .column {
+        flex-grow: 1;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .row > .column.one-half {
+        max-width: 46%;
+    }
+
+    .row > .column.one-third {
+        max-width: 29.3333%;
+    }
+
+    .row > .column.two-thirds {
+        max-width: 62.6666%;
+    }
+
+    .row > .column.one-fourth {
+        max-width: 21%;
+    }
+
+    .row > .column.centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/* FOR DEMO PURPOSES ONLY */
+.demo .column {
+    background: rgba(0,0,0,.2);
+    padding: 1em;
+    text-align: center;
+}
+
+/* SITE STRUCTURE */
+
+/* SITE HEADER */
+.site-header {
+    margin-top: 0;
+    background-color: none;
+    position: relative;
+  }
+  .site-header .site-logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .site-header .site-nav {
+    padding: 1em;
+  }
+
+/* ON LARGER SCREENS PLACE LOGO LEFT AND NAV RIGHT */
+@media (min-width: 768px) { 
+    .site-header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* STYLING FOR BOTH HEADER AND FOOTER */
+.site-header a, 
+.site-footer a {
+    color: rgba(0,0,0,.8)
+}
+
+.site-header a:hover
+.site-footer a:hover {
+    color: rgb(204, 141, 74);
+    text-decoration: none;
+}
+
+/* LOGO AREA */
+
+.site-id h1 {
+    font-size: 1.5em;
+    margin: 0;
+    padding-top: .55em;
+    text-align: center;
+}
+
+.site-id h1 a:hover {
+    text-decoration: none;
+}
+
+.site-id h1 .b {
+    font-weight: normal;
+    text-decoration: none;
+    color: rgb(0 0 0 / .4);
+}
+
+/* SITE NAV */
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-nav a {
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+}
+
+.site-nav a:hover {
+    color: rgb(204, 141, 74);
+}    
+
+.site-nav .menu-button {
+    display: none;
+}
+
+/* SECTIONS */
+section {
+    padding: 3em 0;
+}
+
+/* HERO */
+
+.hero #about {
+    background-image: url(../img/chewy-I-rgDPLKogs-unsplash.jpg);
+    background-size: 100%;
+    padding: 216vh 0em 10vh 0em;
+    color: rgb(255, 255, 255);
+}
+
+.hero #visitus {
+    background-image: url(../img/mathias-p-r-reding-4_YakZekVv0-unsplash.jpg);
+    background-size: 100%;
+    padding: 216vh 0em 10vh 0em;
+    color: rgb(255, 255, 255);
+}
+
+.hero #adopt {
+    background-image: url(../img/kari-shea-BxXupp6MVqo-unsplash.jpg);
+    background-size: 100%;
+    padding: 205vh 0em 10vh 0em;
+    color: rgb(255, 255, 255);
+}
+
+.hero #faqs {
+    background-image: url(../img/jose-hernandez-uribe-toTwUApQ4v4-unsplash.jpg);
+    background-size: 100%;
+    padding: 216vh 0em 10vh 0em;
+    color: rgb(255, 255, 255);
+}
+
+
+.hero .text-centered p {
+    max-width: 22em;
+    margin: 0;
+}
+
+.hero h1,
+.hero h2 {
+  font-size: 3em;
+  line-height: 1.1em;
+}
+
+.hero h1, p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* TOGGLE NAV */
+
+@media (max-width: 767px) {
+    .toggle-nav .site-id {
+        position: absolute;
+    }
+    .toggle-nav .site-nav {
+        text-align: right;
+    }
+    .toggle-nav .site-nav .menu-button {
+        display: block;
+        display: inline-block;
+        background-color: transparent;
+        cursor: pointer;
+        padding: .3em .8em;
+        margin-bottom: .8em;
+        border: 1px solid black;
+    }
+    .toggle-nav .site-nav .menu-button::selection {
+        background-color: rgba(255,255,255,0);
+    }
+    .toggle-nav .site-nav ul {
+        display: block;
+        text-align: center;
+    }
+    .toggle-nav .site-nav a:hover {
+        text-decoration: none;
+        background-color: rgb(204, 141, 74);
+        color: white;
+    }
+    .toggle-nav[data-navstate='closed'] ul {
+        height: 0;
+        overflow: hidden;
+    }
+    .toggle-nav[data-navstate='open'] ul {
+        height: auto;
+        overflow: visible;
+    }
+
+/* ANIMATED TOGGLE-MAV MENU */
+
+@media (max-width: 767px) {
+    .toggle-nav.animated ul {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      padding: 0;
+      border-width: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .toggle-nav.animated[data-navstate=open] ul {
+      max-height: 138em;
+      opacity: 1;
+      padding: 0.5em 0;
+      border-width: 0px;
+      transition: all 0.6s ease;
+    }
+  
+    .toggle-nav.animated li {
+      padding: 0;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .toggle-nav.animated[data-navstate=open] li {
+      padding: 0.25em;
+      opacity: 1;
+      transition: all 0.6s ease 0.2s;
+    }
+  
+    .toggle-nav.animated li a {
+      padding: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .toggle-nav.animated[data-navstate=open] li a {
+      padding: 0.75em;
+    }
+
+    .menu-button {
+        cursor: pointer;
+        display: flex;
+        background: transparent;
+        border-color: transparent;
+        font-size: inherit;
+        font-family: inherit;
+    }
+
+    .menu-button:after {
+        content: "\2630";
+        font-size: 1.5em;
+        transition: all 0.2s ease-out;
+    }
+
+    [data-navstate="open"]
+    .menu-button:after {
+    content: "\2715";
+    transform: rotate(-90deg);
+    }
+
+}
+
+/* NAVICON */
+.toggle-nav .site-nav .menu-button.navicon {
+    border: none;
+    color: rgba(255,255,255,0);
+    padding: 0;
+}
+.toggle-nav .site-nav .menu-button.navicon::after {
+    content: "\2630";
+    display: inline-block;
+    padding: .2em 0;
+    margin: 0;
+    color: rgba(0,0,0,.8);
+    font-size: 1.4em;
+}
+
+.toggle-nav[data-navstate='open'] .site-nav .menu-button.navicon::after {
+    content: "\2715";
+}
+
+}
+
+/* SUB PAGES */
+
+article {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article h1, 
+article h1 + .subhead,
+article .date {
+    text-align: center;
+}
+
+article h2.subhead {
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+article .subhead {
+    font-weight: normal;
+    opacity: .7;
+}
+
+article .date {
+    font-size: .75em;
+    opacity: .5;
+    margin-bottom: 3em;
+}
+
+article p +h1,
+article p +h2,
+article p +h3,
+article p +h4,
+article p +h5,
+article p +h6 {
+    margin-top: 1.5em;
+}
+
+article p:first-of-type {
+    font-size: 1.4em;
+    line-height: 1.3;
+}
+
+/* article p:first-of-type:first-letter {
+    font-size: 3em;
+    line-height: 1em;
+    background: #000;
+    color: #fff;
+    padding: .2em .4em;
+    margin-right: .3em;
+    float: left;
+} */
+
+  /* FORMS */
+
+  form {
+    max-width: 600px;
+    margin: 2em auto;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  form label,
+  form input,
+  form textarea {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      font-size: 1em;
+  }
+  
+  form label {
+      margin-top: 2em;
+      margin-bottom: .25em;
+  }
+  
+  form input[type="text"],
+  form textarea {
+      border: 1px solid #ccc;
+      padding: .5em;
+      color: #666;
+  }
+  
+  form textarea {
+      min-height: 10em;
+      line-height: 1.5em;
+  }
+  
+  form input[type="submit"] {
+    margin-top: 1.5em;
+    width: auto;
+  }
+  
+  /* CUSTOM SITE CSS */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    margin: .5em auto;
+    border-bottom: 3px solid rgb(0 0 0 / .2);
+}
+
+.site-header.sticky {
+    position: fixed;
+    width: 100%;
+}
+
+.site-header.sticky + main {
+    padding-top: 3em;
+}
+
+#about {
+    background: rgb(0 0 0 / .05);
+}
+
+#contact {
+    background: rgb(0 0 0 / .1);
+}
+
+/* VERTICAL MEDIA QUERY add height/padding to bottom of contact section only for lg screens - credit to Romina for this idea */
+
+@media (min-height: 600px) {
+    #contact {
+        padding-bottom: 20em;
+    }
+}
