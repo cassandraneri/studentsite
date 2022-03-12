@@ -77,29 +77,15 @@ h5 {
     line-height: 1.5;
 }
 
-/* PARAGRAPHS */
-p {
-    margin: .5em 0;
-    max-width: 38em;
-}
-
-/* strong {
-    font-weight: 700;
-}
-
-em {
-    font-style: italic;
-} */
-
 /* LINKS */
 a {
-    color: rgb(195, 112, 38);
+    color: rgba(0,0,0,.8);
     text-decoration: none;
 }
 
 a:hover {
     color:rgb(195, 112, 38);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* HELPER CLASSES */
@@ -186,11 +172,11 @@ body {margin: 0; }
 
 /* CONTAINER */
 
-.container {
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 4%;
-}
+} */
 
 /* MEDIA QUERIES */
 
@@ -413,7 +399,7 @@ section {
   
   /* MAKE MY IMAGES RESPONSIVE */
   #contactus .image-wrapper img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
   }
   
@@ -423,6 +409,7 @@ section {
 .hero #about {
     background-image: url(../img/chewy-I-rgDPLKogs-unsplash.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     padding: 216vh 0em 10vh 0em;
     color: rgb(255, 255, 255);
 }
@@ -430,6 +417,7 @@ section {
 .hero #visitus {
     background-image: url(../img/mathias-p-r-reding-4_YakZekVv0-unsplash.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     padding: 216vh 0em 10vh 0em;
     color: rgb(255, 255, 255);
 }
@@ -437,6 +425,7 @@ section {
 .hero #adopt {
     background-image: url(../img/kari-shea-BxXupp6MVqo-unsplash.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     padding: 205vh 0em 10vh 0em;
     color: rgb(255, 255, 255);
 }
@@ -444,29 +433,10 @@ section {
 .hero #faqs {
     background-image: url(../img/jose-hernandez-uribe-toTwUApQ4v4-unsplash.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     padding: 216vh 0em 10vh 0em;
     color: rgb(255, 255, 255);
 }
-
-
-.hero .text-centered p {
-    max-width: 22em;
-    margin: 0;
-}
-
-.hero h1,
-.hero h2 {
-  font-size: 3em;
-  line-height: 1.1em;
-}
-
-.hero h1, p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 
 /* TOGGLE NAV */
 
@@ -681,7 +651,7 @@ article p:first-of-type {
   
   form textarea {
       min-height: 10em;
-      line-height: 1.5em;
+      line-height: 1em;
   }
   
   form input[type="submit"] {
