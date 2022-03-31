@@ -32,7 +32,7 @@
 
 body {
     font-size: 87.5%; /* 14px */
-    font-family: Proxima Nova, sans-serif;
+    font-family: 'Montserrat', Proxima Nova, sans-serif;
     line-height: 1.4;
     color: rgba(0,0,0,.8);
 }
@@ -379,7 +379,7 @@ section {
   }
   
   #contactus .content-wrapper {
-    padding: 4em;
+    /* padding: 4em; */
     padding-bottom: 0;
     margin-bottom: 0;
     display: flex;  
@@ -565,8 +565,8 @@ section {
 }
 
 /* SUB PAGES */
-/* 
-article {
+
+/* article {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -592,7 +592,7 @@ article .date {
     font-size: .75em;
     opacity: .5;
     margin-bottom: 3em;
-}
+} */
 
 article p +h1,
 article p +h2,
@@ -603,9 +603,14 @@ article p +h6 {
     margin-top: 1.5em;
 }
 
-article p {
-    text-align: center;
-} */
+h3 {
+    font-family: Hafidz;
+    font-size: 3em;
+}
+
+address {
+    font-style: normal;
+}
 
   /* FORMS */
 
