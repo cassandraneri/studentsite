@@ -32,7 +32,7 @@
 
 body {
     font-size: 87.5%; /* 14px */
-    font-family: 'Montserrat', Proxima Nova, sans-serif;
+    font-family: montserrat, Helvetica, sans-serif;
     line-height: 1.4;
     color: rgba(0,0,0,.8);
 }
@@ -93,10 +93,10 @@ a:hover {
     text-align: center;
 }
 
-.full-width {
+/* .full-width {
     max-width: none;
     width: 100%;
-}
+} */
 
 .horiz-center {
     margin-left: auto;
@@ -564,54 +564,6 @@ section {
 
 }
 
-/* SUB PAGES */
-
-/* article {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-article h1, 
-article h1 + .subhead,
-article .date {
-    text-align: center;
-}
-
-article h2.subhead {
-    font-size: 1.5em;
-    line-height: 1.2;
-}
-
-article .subhead {
-    font-weight: normal;
-    opacity: .7;
-}
-
-article .date {
-    font-size: .75em;
-    opacity: .5;
-    margin-bottom: 3em;
-} */
-
-article p +h1,
-article p +h2,
-article p +h3,
-article p +h4,
-article p +h5,
-article p +h6 {
-    margin-top: 1.5em;
-}
-
-h3 {
-    font-family: Hafidz;
-    font-size: 3em;
-}
-
-address {
-    font-style: normal;
-}
-
   /* FORMS */
 
   form {
@@ -690,7 +642,35 @@ main {
     background: rgb(0 0 0 / .1);
 }
 
+article p +h1,
+article p +h2,
+article p +h3,
+article p +h4,
+article p +h5,
+article p +h6 {
+    margin-top: 1.5em;
+}
 
+h3 {
+    font-family: Hafidz;
+    font-size: 3em;
+}
+
+address {
+    font-style: normal;
+}
+
+/* MENU TABLE */
+.menu-table {
+    border-collapse: separate;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-table th {
+    margin: 0;
+    padding: 0;
+}
 
 /* VERTICAL MEDIA QUERY add height/padding to bottom of contact section only for lg screens - credit to Romina for this idea */
 
