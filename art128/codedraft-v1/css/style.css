@@ -173,7 +173,7 @@ body {margin: 0; }
 /* CONTAINER */
 
 .container {
-    background-color: white;
+    background-color: none;
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 4%;
@@ -404,40 +404,15 @@ section {
     height: auto;
   }
   
+ /* HERO */
 
-/* HERO */
-
-/* .hero #about {
+/* .hero {
     background-image: url(../img/chewy-I-rgDPLKogs-unsplash.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     padding: 216vh 0em 10vh 0em;
     color: rgb(255, 255, 255);
-}
-
-.hero #visitus {
-    background-image: url(../img/mathias-p-r-reding-4_YakZekVv0-unsplash.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding: 216vh 0em 10vh 0em;
-    color: rgb(255, 255, 255);
-}
-
-.hero #adopt {
-    background-image: url(../img/kari-shea-BxXupp6MVqo-unsplash.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding: 205vh 0em 10vh 0em;
-    color: rgb(255, 255, 255);
-}
-
-.hero #faqs {
-    background-image: url(../img/jose-hernandez-uribe-toTwUApQ4v4-unsplash.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding: 216vh 0em 10vh 0em;
-    color: rgb(255, 255, 255);
-} */
+}  */
 
 /* TOGGLE NAV */
 
