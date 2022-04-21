@@ -618,6 +618,10 @@ main {
     display: grid;
 }
 
+/* #cafemenu th:first-of-type {
+    display: none;
+} */
+
 /* #about {
     background: rgb(0 0 0 / .05);
 } */
