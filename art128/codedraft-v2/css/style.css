@@ -396,8 +396,8 @@ section {
   }
   
   #contactus .image-wrapper {
-    margin-left: 45%;
-    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-bottom: 1%;
   }
   
   #contactus .text-wrapper {
@@ -618,9 +618,9 @@ main {
     display: grid;
 }
 
-/* #cafemenu th:first-of-type {
-    display: none;
-} */
+#cafemenu th:first-of-type {
+    visibility: hidden;
+}
 
 /* #about {
     background: rgb(0 0 0 / .05);
