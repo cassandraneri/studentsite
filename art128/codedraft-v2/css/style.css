@@ -367,6 +367,10 @@ body.demo::before {
 }
 
 /* SECTIONS */
+
+#contactus {
+    background-color: transparent;
+}
   
   #contactus .content-wrapper {
     /* padding: 4em; */
@@ -388,11 +392,15 @@ body.demo::before {
     justify-content: flex-end;
   }
   
-  /* MAKE MY IMAGES RESPONSIVE */
-  #contactus .image-wrapper img {
+  MAKE MY IMAGES RESPONSIVE */
+  /* #contactus .image-wrapper img {
     max-width: 100%;
     height: auto;
   }
+
+.map {
+    float: none;
+}
   
  /* HERO */
 
@@ -603,7 +611,7 @@ main {
 
 #about {
     margin-top: 1em;
-    padding-bottom: 50em;
+    padding-bottom: 100em;
     background-image: url(../img/chewy-I-rgDPLKogs-unsplash.jpg);
     width: 100%;
     background-size: cover;
@@ -612,7 +620,7 @@ main {
 
 #visitus {
     margin: 0;
-    padding-bottom: 10em;
+    padding-bottom: 100em;
     background-image: url(../img/mathias-p-r-reding-4_YakZekVv0-unsplash.jpg);
     width: 100%;
     background-size: cover;
@@ -621,16 +629,16 @@ main {
 
 #adopt {
     margin: 0;
-    padding-bottom: 20em;
+    padding-bottom: 90em;
     background-image: url(../img/kari-shea-BxXupp6MVqo-unsplash.jpg);
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-#faqs, #contact {
+#faqs {
     margin: 0;
-    padding-bottom: 60em;
+    padding-bottom: 145em;
     background-image: url(../img/jose-hernandez-uribe-toTwUApQ4v4-unsplash.jpg);
     width: 100%;
     background-size: 100%;
@@ -641,10 +649,9 @@ main {
     visibility: hidden;
 }
 
-#contact {
-    background: rgb(0 0 0 / .1);
+#contactus {
+    background: white;
 }
-
 
 h3 {
     font-family: Hafidz;
