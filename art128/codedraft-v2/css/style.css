@@ -30,6 +30,11 @@
 
 /* TYPOGRAPHY */
 
+h3 {
+    font-family: Hafidz;
+    text-align: center;
+}
+
 body {
     font-size: 87.5%; /* 14px */
     font-family: montserrat, Helvetica, sans-serif;
@@ -127,6 +132,46 @@ a:hover {
 } */
 
 /* IMAGES */
+
+#about {
+    margin-top: 1em;
+    padding-bottom: 100em;
+    background-image: url(../img/chewy-I-rgDPLKogs-unsplash.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#visitus {
+    margin: 0;
+    padding-bottom: 100em;
+    background-image: url(../img/mathias-p-r-reding-4_YakZekVv0-unsplash.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#adopt {
+    margin: 0;
+    padding-bottom: 90em;
+    background-image: url(../img/kari-shea-BxXupp6MVqo-unsplash.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#cafemenu th:first-of-type {
+    visibility: hidden;
+}
+
+#faqs {
+    margin: 0;
+    padding-bottom: 145em;
+    background-image: url(../img/jose-hernandez-uribe-toTwUApQ4v4-unsplash.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 
 img {
     max-width: 100%;
@@ -241,7 +286,7 @@ body.demo::before {
 
 .row {
     max-width: 1250px;
-    margin: 2em;
+    margin: auto;
 }
 
 @media (min-width: 768px) {
@@ -249,8 +294,6 @@ body.demo::before {
     .row {
         display: flex;
         justify-content: space-between;
-        margin-left: -2%;
-        margin-right: -2%;
     }
 
     .row > .column {
@@ -372,16 +415,15 @@ body.demo::before {
     background-color: transparent;
 }
   
-  #contactus .content-wrapper {
-    /* padding: 4em; */
+.content-wrapper {
     padding-bottom: 0;
     margin-bottom: 0;
-    display: flex;  
-    flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;  
   }
   
   #contactus .image-wrapper {
-    margin-left: 20%;
+    margin-left: 30%;
     margin-bottom: 1%;
   }
   
@@ -393,33 +435,22 @@ body.demo::before {
   }
   
   MAKE MY IMAGES RESPONSIVE */
-  /* #contactus .image-wrapper img {
+  #contactus .image-wrapper img {
     max-width: 100%;
     height: auto;
   }
 
 .map {
     float: none;
-}
-  
- /* HERO */
-
-
-
-/* .hero {
-    background-image: url(../img/chewy-I-rgDPLKogs-unsplash.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat; 
-    padding: 216vh 0em 10vh 0em;
-    color: rgb(255, 255, 255);
-}  */
+}}
 
 /* TOGGLE NAV */
 
-@media (max-width: 767px) {
+{ @media (max-width: 767px) {
     .toggle-nav .site-id {
         position: absolute;
     }
+
     .toggle-nav .site-nav {
         text-align: right;
     }
@@ -537,9 +568,7 @@ body.demo::before {
     content: "\2715";
 }
 
-}
-
-  /* FORMS */
+/* FORMS */
 
   form {
     max-width: 600px;
@@ -609,46 +638,6 @@ main {
     display: grid;
 }
 
-#about {
-    margin-top: 1em;
-    padding-bottom: 100em;
-    background-image: url(../img/chewy-I-rgDPLKogs-unsplash.jpg);
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#visitus {
-    margin: 0;
-    padding-bottom: 100em;
-    background-image: url(../img/mathias-p-r-reding-4_YakZekVv0-unsplash.jpg);
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#adopt {
-    margin: 0;
-    padding-bottom: 90em;
-    background-image: url(../img/kari-shea-BxXupp6MVqo-unsplash.jpg);
-    width: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#faqs {
-    margin: 0;
-    padding-bottom: 145em;
-    background-image: url(../img/jose-hernandez-uribe-toTwUApQ4v4-unsplash.jpg);
-    width: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-#cafemenu th:first-of-type {
-    visibility: hidden;
-}
-
 #contactus {
     background: white;
 }
@@ -656,6 +645,7 @@ main {
 h3 {
     font-family: Hafidz;
     font-size: 3em;
+    text-align: center;
 }
 
 address {
