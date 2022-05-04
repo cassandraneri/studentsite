@@ -218,7 +218,7 @@ body::before {
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
-}
+} */
 
 #cafemenu th:first-of-type {
     visibility: hidden;
@@ -226,15 +226,12 @@ body::before {
 
 #faqs {
     margin: 0;
-    padding-bottom: 145em;
-    background-image: url(../img/jose-hernandez-uribe-toTwUApQ4v4-unsplash.jpg);
-    width: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-} */
+    padding-bottom: 10em;
+}
 
 img {
-    max-width: 100%;
+    padding-right: 4em;
+    max-width: 150%;
     height: auto;
 }
 
