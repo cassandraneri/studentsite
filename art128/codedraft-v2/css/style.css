@@ -30,7 +30,7 @@
 
 /* TYPOGRAPHY */
 
-h3 {
+h2 {
     font-family: Hafidz;
     text-align: center;
 }
@@ -85,7 +85,7 @@ h5 {
 
 /* LINKS */
 a {
-    color: rgba(0,0,0,.8);
+    color: rgba(255,255,255,1);
     text-decoration: none;
 }
 
@@ -131,9 +131,69 @@ a:hover {
     clear: both;
 } */
 
+/* BODY */
+
+body {
+    background-image: url(../img/reba-spike-OjB_lkGKhX8-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    display: block;
+    background-attachment: scroll;
+    height: var(--background-height);
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    transform: scale(1);
+    width: 100vw;
+    z-index: 0;
+    }
+    
+    body::after {
+        background-color: rgba(0,0,0,.8);
+        content: '';
+        display: block;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        transform: scale(1);
+        transition: opacity 1s ease-in-out 0.5s, visibility 1s 0.5s;
+        visibility: hidden;
+        width: 100%;
+        z-index: 1;
+    }
+
 /* IMAGES */
 
-#about {
+.backimage {
+    background-image: url(../img/reba-spike-OjB_lkGKhX8-unsplash.jpg);
+    background-size: 130em, auto, cover;
+    background-position: center, 0% 0%, center;
+    background-color: #FFFFFF;
+}
+
+.containerbox {
+    background-color: rgba(255,255,255,0.700);
+    max-width: 768px;
+    margin: auto;
+    padding: 0 4%;
+    border-radius: 1.5em;
+}
+
+.container {
+    max-width: 768px;
+    margin: auto;
+    padding: 0 3%;
+}
+
+
+/* #about {
     margin-top: 1em;
     padding-bottom: 100em;
     background-image: url(../img/chewy-I-rgDPLKogs-unsplash.jpg);
@@ -171,7 +231,7 @@ a:hover {
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
-}
+} */
 
 img {
     max-width: 100%;
@@ -211,9 +271,8 @@ button:hover, form input[type="submit"]:hover {
     color: rgba(255,255,255,1);
 }
 
-/* LAYOUT */
-
 /* SIMPLE RESET */
+
 * {box-sizing: border-box; }
 body {margin: 0; }
 
@@ -242,12 +301,12 @@ body {margin: 0; }
         font-size: 112.5%; /* 18px */
     }
     .container {
-        max-width: 1200px;
+        max-width: 800px;
     }
 } 
 
 /* FOR DEMO PURPOSES ONLY */
-body.demo {
+/* body.demo {
     padding-top: 2em;
 }
 body.demo::before {
@@ -280,15 +339,11 @@ body.demo::before {
         background-color: #09c;
         content: "Extra Large (Desktop) Screen 1250px +";
     }
-}    
+}     */
 
 /* SEMANTIC GRID SYSTEM */
 
-.row {
-    max-width: 1250px;
-    margin: auto;
-}
-
+/* 
 @media (min-width: 768px) {
 
     .row {
@@ -323,7 +378,7 @@ body.demo::before {
         margin-right: auto;
     }
 
-}
+} */
 
 /* FOR DEMO PURPOSES ONLY */
 .demo .column {
@@ -355,9 +410,10 @@ body.demo::before {
 }
 
 /* STYLING FOR BOTH HEADER AND FOOTER */
+
 .site-header a, 
 .site-footer a {
-    color: rgba(0,0,0,.8)
+    color: rgba(255,255,255,1);
 }
 
 .site-header a:hover
@@ -371,7 +427,7 @@ body.demo::before {
 .site-id h1 {
     font-size: 1.5em;
     margin: 0;
-    /* padding-top: .55em; */
+    padding: 0;
     text-align: center;
 }
 
@@ -392,11 +448,12 @@ body.demo::before {
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .site-nav a {
     padding: 1em;
+    display: flex;
     justify-content: center;
     text-decoration: none;
 }
@@ -413,13 +470,23 @@ body.demo::before {
 
 #contactus {
     background-color: transparent;
+    padding-bottom: 1em;
 }
   
+#contactus a {
+    color: rgba(0,0,0,.8);
+}
+
+#contactus a:hover {
+    color:rgb(195, 112, 38);
+}
+
 .content-wrapper {
     padding-bottom: 0;
     margin-bottom: 0;
     display: flex;
     flex-direction: row-reverse;  
+    background-color: transparent;
   }
   
   #contactus .image-wrapper {
@@ -442,11 +509,11 @@ body.demo::before {
 
 .map {
     float: none;
-}}
+}
 
 /* TOGGLE NAV */
 
-{ @media (max-width: 767px) {
+@media (max-width: 767px) {
     .toggle-nav .site-id {
         position: absolute;
     }
@@ -638,10 +705,6 @@ main {
     display: grid;
 }
 
-#contactus {
-    background: white;
-}
-
 h3 {
     font-family: Hafidz;
     font-size: 3em;
@@ -673,4 +736,4 @@ address {
     .image {
         width: 50%;
     }
-}
+}}

@@ -18,30 +18,32 @@
     <link rel="stylesheet" href="css/style.css">
     
 </head>
-<body id="top">
-
+<body class="backimage" id="top">
+    <!-- ::before -->
+    <div class="container">
 <header class="site-header toggle-nav" data-navstate="closed">
-    <div class="site-id">
-        <a href="#top"><img src="img/logo.svg" alt="Hawaii Cat Cafe Logo" width="1000" height="1000"></a>
-        <h1 class="hidden"><a href="#top">Hawaii Cat Cafe</a></h1>
-    </div>
     <nav class="site-nav">
         <button class="menu-button navicon">Menu</button>
         <ul class="animated">
             <li class="animated"><a class="scroll" href="#about">About</a></li>
             <li class="animated"><a class="scroll" href="#visitus">Visit</a></li>
             <li class="animated"><a class="scroll" href="#adopt">Adopt</a></li>
-            <li class="animated"><a class="scroll" href="#cafemenu">Cafe Menu</a></li>
+            <li class="animated"><a class="scroll" href="#cafemenu">Cafe</a></li>
             <li class="animated"><a class="scroll" href="#faqs">FAQS</a></li>
             <li class="animated"><a class="scroll" href="#contactus">Contact</a></li>
         </ul>
     </nav>
+    <div class="site-id">
+        <a href="#top"><img src="img/logo.svg" alt="Hawaii Cat Cafe Logo" width="1000" height="1000"></a>
+        <h1 class="hidden"><a href="#top">Hawaii Cat Cafe</a></h1>
+    </div>
 </header>  
+</div>
 
-<main class="site-main">
+<main class="site-main containerbox">
     <section id="about">
         <div class="container">
-            <h3 class="section-title">About Us</h3>
+            <h2 class="section-title">About Us</h2>
                 <p>Hawaii Cat Cafe is a small cafe where you can socialize with adoptable rescue cats while enjoying a handcrafted beverage and European style pastries. All of the cats and kittens at the cafe are rescued by either our staff or the Humane Society.</p>
                 <p>“We are dedicated to changing the lives of sheltered cats by finding them forever homes, and educating the public about responsible pet ownership.”</p>
                 <p>Adopting cats from our cafe opens up space to rescue more cats. Together, we’re reducing euthanasia rates. Hawai‘i Cat Cafe allows potential adopters to get to know the cats’ personalities in a fun environment. Cats have significantly more exposure and opportunities to be adopted.</p>
@@ -50,7 +52,7 @@
 
     <section id="visitus">
         <div class="container">
-            <h3 class="section-title">Prepare for Your Visit</h3>
+            <h2 class="section-title">Prepare for Your Visit</h2>
                 <p>Come hang out in Hawaii's first and favorite cat cafe! Play and cuddle with our adorable kitties from the Hawaiian Humane Society, and hopefully fall in love with one to take home!</p>
                 </div>
                 <div class="row">
@@ -84,7 +86,7 @@
 
     <section id="adopt">
         <div class="container">
-            <h3 class="section-title">Adopt a Cat</h3>
+            <h2 class="section-title">Adopt a Cat</h2>
                 <div class="row">
                     <div class="column one-half">
                         <h4>How to Adopt</h4>
@@ -125,7 +127,7 @@
     </section>
     <section id="cafemenu">
         <div class="container">
-                <h3 class="section-title">Cafe Menu</h3>
+                <h2 class="section-title">Cafe Menu</h2>
                     <div class="row">
                         <div class="column one-third">
                             <h4>Coffees</h4>
@@ -284,17 +286,8 @@
 
         <section id="faqs">
             <div class="container">
-                    <nav class="site-nav">
-                        <ul>
-                            <li class="animated"><a class="scroll" href="#about">About</a></li>
-                            <li class="animated"><a class="scroll" href="#visitus">Visit Us</a></li>
-                            <li class="animated"><a class="scroll" href="#adopt">Adopt</a></li>
-                            <li class="animated"><a class="scroll" href="#cafemenu">Cafe Menu</a></li>
-                            <li class="animated"><a class="scroll" href="#faqs">FAQS</a></li>
-                            <li class="animated"><a class="scroll" href="#contactus">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
+
+                <h2 class="section-title">Questions</h2>
 
                 <details>
                 <summary>Can I bring my own cat to the cafe?</summary>
@@ -370,16 +363,17 @@
                   </form> -->
             </div>
         </section>
-    
+    <div>
 </main>
 
 <footer class="site-footer">
+    <div class="container">
         <nav class="site-nav">
             <ul>
                 <li class="animated"><a class="scroll" href="#about">About</a></li>
                 <li class="animated"><a class="scroll" href="#visitus">Visit</a></li>
                 <li class="animated"><a class="scroll" href="#adopt">Adopt</a></li>
-                <li class="animated"><a class="scroll" href="#cafemenu">Cafe Menu</a></li>
+                <li class="animated"><a class="scroll" href="#cafemenu">Cafe</a></li>
                 <li class="animated"><a class="scroll" href="#faqs">FAQS</a></li>
                 <li class="animated"><a class="scroll" href="#contactus">Contact</a></li>
             </ul>
@@ -387,11 +381,12 @@
     </div>
 </footer>
 
+
     <!-- SCROLL JS FILE -->
     <script src="js/scroll.js"></script>  
 
     <!-- MAIN JS FILE -->
     <script src="js/script.js"></script>
-
+    <!-- ::after -->
 </body>
 </html>
