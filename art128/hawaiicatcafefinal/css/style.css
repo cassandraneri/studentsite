@@ -715,6 +715,10 @@ p, h4, ul, a.button, .cafemenu {
     text-align: center;
 }
 
+#faqs p {
+    text-align: left;
+}
+
 #contactus {
     background-color: transparent;
     padding-bottom: 1em;
