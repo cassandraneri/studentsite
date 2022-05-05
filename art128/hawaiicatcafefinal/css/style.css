@@ -267,7 +267,7 @@ body::before {
     left: 0;
     display: flex;
     overflow-x: scroll;
-    counter-reset: item;
+    counter-reset: none;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
   }
@@ -276,12 +276,12 @@ body::before {
     position: relative;
     flex: 0 0 100%;
     width: 100%;
-    background-color: #f99;
-    counter-increment: item;
+    background-color: transparent;
+    counter-increment: none;
   }
   
   .carousel__slide:nth-child(even) {
-    background-color: #99f;
+    background-color: transparent;
   }
   
   .carousel__slide:before {
@@ -290,7 +290,7 @@ body::before {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%,-40%,70px);
-    color: #fff;
+    color: transparent;
     font-size: 2em;
   }
   
@@ -307,7 +307,7 @@ body::before {
     .carousel__snapper {
       animation-name: tonext, snap;
       animation-timing-function: ease;
-      animation-duration: 3s;
+      animation-duration: 4s;
       animation-iteration-count: infinite;
     }
   
@@ -385,7 +385,7 @@ body::before {
     background-size: 1.5rem 1.5rem;
     background-repeat: no-repeat;
     background-position: center center;
-    color: #fff;
+    color: transparent;
     font-size: 2.5rem;
     line-height: 4rem;
     text-align: center;
@@ -407,14 +407,14 @@ body::before {
     background-color: rgba(255,255,255,0.700);
     max-width: 768px;
     margin: auto;
-    padding: 4em 4%;
+    padding: 4em 4em 2em;
     border-radius: 1.5em;
 }
 
 .container {
     max-width: 768px;
     margin: auto;
-   padding: 0 3%;
+    padding: 0 3%;
 }
 
 /* #about {
@@ -448,6 +448,11 @@ body::before {
     visibility: hidden;
 }
 
+#cafemenu {
+    text-align: center;
+    padding: 6em;
+}
+
 #faqs {
     margin: 0;
     padding-bottom: 10em;
@@ -459,6 +464,7 @@ img {
 }
 
 /* BUTTONS */
+
 .button,
 button, form input[type="submit"] {
     font-size: inherit;
@@ -615,10 +621,12 @@ body.demo::before {
 }
 
 .site-id img {
-    margin-top: 1em;
+    margin: 1em;
     padding-bottom: 1em;
     background-color: transparent;
     max-width: 100px;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 /* STYLING FOR BOTH HEADER AND FOOTER */
@@ -702,6 +710,10 @@ body.demo::before {
 }
 
 /* SECTIONS */
+
+p, h4, ul, a.button, .cafemenu {
+    text-align: center;
+}
 
 #contactus {
     background-color: transparent;
@@ -951,10 +963,12 @@ address {
 }
 
 /* MENU TABLE */
+
 .menu-table {
     border-collapse: separate;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .menu-table th {
