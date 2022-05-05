@@ -16,6 +16,10 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     
 </head>
 <body class="backimage" id="top">
@@ -42,66 +46,28 @@
 
 <main class="site-main containerbox">
 
-    <section class="carousel" aria-label="Gallery">
-        <ol class="carousel__viewport">
-          <li id="carousel__slide1"
-              tabindex="0"
-              class="carousel__slide">
-            <div class="carousel__snapper">
-              <img src="https://images.unsplash.com/photo-1603314585442-ee3b3c16fbcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
-              <a href="#carousel__slide2"
-                 class="carousel__next">Go to next slide</a>
-            </div>
-          </li>
-          <li id="carousel__slide2"
-              tabindex="0"
-              class="carousel__slide">
-            <div class="carousel__snapper">
-              <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
-            <a href="#carousel__slide3"
-               class="carousel__next">Go to next slide</a>
-            </div>
-          </li>
-          <li id="carousel__slide3"
-              tabindex="0"
-              class="carousel__slide">
-            <div class="carousel__snapper">
-              <img src="https://images.unsplash.com/photo-1517451330947-7809dead78d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
-            <a href="#carousel__slide4"
-               class="carousel__next">Go to next slide</a>
-            </div>
-          </li>
-          <li id="carousel__slide4"
-              tabindex="0"
-              class="carousel__slide">
-            <div class="carousel__snapper">
-            <a href="#carousel__slide3"
-               class="carousel__prev">Go to previous slide</a>
-            </div>
-              <img src="https://images.unsplash.com/photo-1496284427489-f59461d8a8e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
-          </li>
-        </ol>
-        <aside class="carousel__navigation">
-          <ol class="carousel__navigation-list">
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide1"
-                 class="carousel__navigation-button">Go to slide 1</a>
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide2"
-                 class="carousel__navigation-button">Go to slide 2</a>
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide3"
-                 class="carousel__navigation-button">Go to slide 3</a>
-            </li>
-            <li class="carousel__navigation-item">
-              <a href="#carousel__slide4"
-                 class="carousel__navigation-button">Go to slide 4</a>
-            </li>
-          </ol>
-        </aside>
-      </section>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1603314585442-ee3b3c16fbcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">Slide 1</div>
+      <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1558674378-e4334d4fecc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">Slide 2</div>
+      <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1517451330947-7809dead78d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">Slide 3</div>
+      <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1496284427489-f59461d8a8e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);">Slide 4</div>
+      <div class="swiper-slide" style="background-image:url(https://images.unsplash.com/photo-1604398907654-ec2bf7108b4a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1233&q=80);">Slide 5</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     
     <section id="about">
         <div class="container">
@@ -143,7 +109,7 @@
                         <div class="column one-half">
                         <a href="#" class="button">BOOK NOW!</a>
                     </div>
-            </div>
+        </div>
     </section>
 
     <section id="adopt">
@@ -173,7 +139,8 @@
                                 <li>FIV/FeLV Negative</li>
                                 <li>Vaccinated</li>
                                 </ul>
-                            Adopters will receive a copy of the medical records.</p>
+                            Adopters will receive a copy of the medical records.
+                        </p>
                     </div>
                     <div class="column one-half">
                         <h4>Adoption Fees</h4>
@@ -185,7 +152,7 @@
                                 <li>6 years +</li>    	
                             </ul>
                         </p>
-                    </div>
+                </div>
     </section>
     <section id="cafemenu">
         <div class="container">
@@ -385,7 +352,6 @@
                 <summary>Do you have parking?</summary>
                 <p>Yes, we have 3 reserved spots in the back of the building. If those are full, Kapahulu Avenue has lots of available metered street parking, and First Hawaiian Bank next to us has a pay to park option.</p>                 
                 </details>
-
             </div>
         </section>
 
@@ -402,11 +368,9 @@
                     </address>
                     <div>
                       <a href="tel:808-744-3192">(808) 744-3192</a>
-                      <br><a href="email:hawaiicatcafe@gmail.com">hawaiicatcafe@gmail.com</a>
-                    
+                      <a href="email:hawaiicatcafe@gmail.com">hawaiicatcafe@gmail.com</a>
                   </div>
-
-                
+  
                 <!-- <form>
                     
                     <label for="contact_name">Name:</label>
