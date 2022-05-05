@@ -22,7 +22,7 @@
     <!-- ::before -->
     <div class="container">
 <header class="site-header toggle-nav" data-navstate="closed">
-    <nav class="site-nav">
+    <nav class="site-nav-top">
         <button class="menu-button navicon">Menu</button>
         <ul class="animated">
             <li class="animated"><a class="scroll" href="#about">About</a></li>
@@ -41,6 +41,65 @@
 </div>
 
 <main class="site-main containerbox">
+
+    <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper">
+              <img src="https://images.unsplash.com/photo-1603314585442-ee3b3c16fbcf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+              <a href="#carousel__slide2"
+                 class="carousel__next">Go to next slide</a>
+            </div>
+          </li>
+          <li id="carousel__slide2"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper">
+              <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+            <a href="#carousel__slide3"
+               class="carousel__next">Go to next slide</a>
+          </li>
+          <li id="carousel__slide3"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper">
+              <img src="https://images.unsplash.com/photo-1517451330947-7809dead78d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+            <a href="#carousel__slide4"
+               class="carousel__next">Go to next slide</a>
+          </li>
+          <li id="carousel__slide4"
+              tabindex="0"
+              class="carousel__slide">
+            <div class="carousel__snapper">
+            <a href="#carousel__slide3"
+               class="carousel__prev">Go to previous slide</a>
+              <img src="https://images.unsplash.com/photo-1496284427489-f59461d8a8e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Square 1x1 Placeholder Image" width="1500" height="1500">
+          </li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1"
+                 class="carousel__navigation-button">Go to slide 1</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2"
+                 class="carousel__navigation-button">Go to slide 2</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3"
+                 class="carousel__navigation-button">Go to slide 3</a>
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4"
+                 class="carousel__navigation-button">Go to slide 4</a>
+            </li>
+          </ol>
+        </aside>
+      </section>
+    
     <section id="about">
         <div class="container">
             <h2 class="section-title">About Us</h2>
@@ -116,11 +175,11 @@
                     <div class="column one-half">
                         <h4>Adoption Fees</h4>
                         <p>Adoption fees are based on age and set by the Hawaiian Humane Society.
-                            ​<ul>
-                            <li>6 months & younger</li>    
-                            <li>7 months to 5 years</li>       
-                            <li>6 years +</li>                             
-                            <li>6 years +</li>    	
+                        ​   <ul>
+                                <li>6 months & younger</li>    
+                                <li>7 months to 5 years</li>       
+                                <li>6 years +</li>                             
+                                <li>6 years +</li>    	
                             </ul>
                         </p>
                     </div>
@@ -368,7 +427,7 @@
 
 <footer class="site-footer">
     <div class="container">
-        <nav class="site-nav">
+        <nav class="site-nav-bottom">
             <ul>
                 <li class="animated"><a class="scroll" href="#about">About</a></li>
                 <li class="animated"><a class="scroll" href="#visitus">Visit</a></li>
