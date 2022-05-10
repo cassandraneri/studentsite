@@ -179,18 +179,9 @@ body::before {
     background-color: #FFFFFF;
 }
 
+/* MY SWIPER ADJUSTMENTS */
 .swiper {
-    width: 600px;
-    height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: transparent;
-}
-
-.swiper-slide .background-image {
-    background-image: 100%;   
+    --swiper-theme-color: white;
 }
 
 /* CONTAINER */
@@ -199,7 +190,7 @@ body::before {
     background-color: rgba(255,255,255,0.700);
     max-width: 768px;
     margin: auto;
-    padding: 4em 4em 2em;
+    padding: .5em 4em 1em;
     border-radius: 1.5em;
 }
 
@@ -217,7 +208,6 @@ body::before {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
 #visitus {
     margin: 0;
     padding-bottom: 100em;
@@ -226,7 +216,6 @@ body::before {
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
 #adopt {
     margin: 0;
     padding-bottom: 90em;
@@ -292,7 +281,7 @@ button:hover, form input[type="submit"]:hover {
 /* SIMPLE RESET */
 
 * {box-sizing: border-box; }
-body {margin: 0; }
+body {margin: 1em; }
 
 /* MEDIA QUERIES */
 
@@ -329,21 +318,18 @@ body.demo::before {
     color: white;
     padding: .5em;
 }
-
 @media (min-width: 768px) {
     body.demo::before {
         background-color: #bcb83d;
         content: "Midsize (Tablet) Screen 768px - 1050px";
     }
 }    
-
 @media (min-width: 1050px) {
     body.demo::before {
         background-color: #693;
         content: "Large (Notebook) Screen 1050px - 1250px";
     }
 }    
-
 @media (min-width: 1250px) {
     body.demo::before {
         background-color: #09c;
@@ -355,39 +341,31 @@ body.demo::before {
 
 /* 
 @media (min-width: 768px) {
-
     .row {
         display: flex;
         justify-content: space-between;
     }
-
     .row > .column {
         flex-grow: 1;
         margin-left: 2%;
         margin-right: 2%;
     }
-
     .row > .column.one-half {
         max-width: 46%;
     }
-
     .row > .column.one-third {
         max-width: 29.3333%;
     }
-
     .row > .column.two-thirds {
         max-width: 62.6666%;
     }
-
     .row > .column.one-fourth {
         max-width: 21%;
     }
-
     .row > .column.centered {
         margin-left: auto;
         margin-right: auto;
     }
-
 } */
 
 /* FOR DEMO PURPOSES ONLY */
@@ -406,7 +384,7 @@ body.demo::before {
 }
 
 .site-header .site-nav {
-    padding: 2em;
+    padding: 0;
     align-items: center;
     background-color: transparent;
     width: 100%;
@@ -423,9 +401,14 @@ body.demo::before {
 
 /* STYLING FOR BOTH HEADER AND FOOTER */
 
-.site-header a, 
+.site-header a {
+    color: rgba(0,0,0,.8);
+    font-size: small;
+}
+
 .site-footer a {
     color: rgba(255,255,255,1);
+    font-size: small;
 }
 
 .site-header a:hover
