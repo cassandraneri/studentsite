@@ -116,7 +116,7 @@ aside {
 
 .social-nav a:hover,
 footer a:hover {
-    color: rgba(255, 255, 255, .5);
+    color: rosybrown;
     text-decoration: none;
     transition: 200ms ease;
     transform: scale(1.2);
