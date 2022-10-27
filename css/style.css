@@ -4,8 +4,8 @@ body { margin: 0;}
 
 /* GLOBAL COLORS */
 body { color: rgba(0,0,0,.8)}
-a { color: black}
-a:hover { color: rosybrown}
+a { color: rosybrown}
+a:hover { color: rgb(224, 186, 186);}
 
 /* GLOBAL TYPOGRAPHY */
 body {
@@ -112,11 +112,12 @@ aside {
 .social-nav a {
     display: clock;
     padding: 1em;
+    color: rosybrown;
 }
 
 .social-nav a:hover,
 footer a:hover {
-    color: rosybrown;
+    color: rgb(224, 186, 186);
     text-decoration: none;
     transition: 200ms ease;
     transform: scale(1.2);
