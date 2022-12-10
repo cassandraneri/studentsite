@@ -1,0 +1,15 @@
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    background-color: $color-accent-dark;
+    color: #fff;
+    text-decoration: none;
+    padding: .6em;
+    border-radius: 30px;
+
+    &:hover {
+        background-color: $color-accent-light;
+    }
+}
+
