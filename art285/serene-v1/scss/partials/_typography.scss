@@ -1,0 +1,71 @@
+/* BASE TEXT COLORS */
+body { color: $color-text-body; }
+h1, h2, h3, h4, h5, h6 {  color: $color-text-headings; }
+
+/* BASE TEXT FONTS */
+body { font-family: $font-family-sans; }
+h1, h2, h3, h4, h5, h6 { font-family: $font-family-serif; }
+
+/* BASE TYPOGRAPHY */
+body {
+    font-size: 100%;
+    line-height: 1.4;
+}
+h1, h2, h3, h4, h5, h6, p { margin: 0 0 .5em 0; }
+
+/* TRADITIONAL TYPOGRAPHIC SCALE */
+h1 {
+    font-size: 3em;
+    line-height: 1;
+}
+h2 {
+    font-size: 2.25em;
+    line-height: 1.1;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+/* LIMIT NUMBER OF CHARACTERS PER LINE */
+p { max-width: 40em; }
+
+/* HORIZONTAL LINE */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: rgba(0,0,0,.1);
+    margin: 3em 0;
+}
+
+/* TYPE SPECIMEN */
+.headline {
+    font-size: 4em;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    color: $color-accent;
+}
+
+.subheadline {
+    font-weight: normal;
+    font-size: 2.5em;
+    line-height: 1.1;
+    color: $color-lightgrey;
+    margin: .25em 0;
+}
+
+/* SECTION HEADING */
+.section-heading {
+    font-size: 1em;
+    font-family: $font-family-sans;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    border-bottom: 5px solid $color-accent;
+    display: table;
+    padding: 0 0 .5em 0;
+    margin: 1em auto 3em auto;
+}
+
+

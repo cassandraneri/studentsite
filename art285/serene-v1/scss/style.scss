@@ -1,0 +1,40 @@
+/* GLOBAL RESETS */
+
+* {
+    box-sizing: border-box;
+}
+
+// VARIABLES 
+$color-text-body: rgba(0, 0, 0, .8);
+$color-text-body-light: rgba(255, 255, 255, .8);
+$color-text-headings: rgba(0, 0, 0, 1);
+$color-text-headings-light: rgba(255, 255, 255, 1);
+$color-accent: #b6d6c8;
+$color-accent-dark: #F47E52;
+$color-accent-light: rgb(202, 202, 255);
+$color-link: #b6d6c8;
+$color-link-dark: #9fcc3b;
+
+$color-lightgrey: rgba(0, 0, 0, .5);
+
+$font-family-sans: 'Source Sans Pro', Helvetica, Arial, Helvetica, sans-serif;
+$font-family-serif: 'Source Serif Pro', Georgia, 'Times New Roman', Times, serif;
+
+// BREAKPOINTS
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
+
+// IMPORTS
+@import "partials/toc";
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/media";
+@import "partials/helpers";
+@import "partials/layout";
+@import "partials/grid";
+@import "partials/structure";
+@import "partials/sitenav";
+@import "partials/animations";
+@import "partials/overrides";
+@import "partials/bubbles";

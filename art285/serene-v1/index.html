@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serene</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+Pro&display=swap"
+        rel="stylesheet">
+
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/hdl3plm.css">
+
+    <!-- MAIN CSS STYLES -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="splash-intro">
+        <div class="logo">
+            <img src="img/logo-01.png" alt="logo">
+        </div>
+    </div>
+
+
+    <header class="site-header">
+        <div class="site-id">
+            <div class="logomark">
+                <a href="index.html"><img src="img/logo-01.png" alt="Serene Logo" width="100" height="100"></a>
+            </div>
+            <h1 class="hide-visually"><a href="index.html">Serene</a></h1>
+        </div>
+        <div class="header-menu">
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+        </div>
+        <nav class="site-nav" data-navstate="closed">
+
+            <button class="menu-button">
+                <div class="menu-button-text hide-visually">Menu</div>
+                <svg width="40" height="24" class="squish-x-animation">
+                    <rect id="menubar-top" x="0" y="0" width="40" height="4" />
+                    <rect id="menubar-mid" x="0" y="10" width="40" height="4" />
+                    <rect id="menubar-bot" x="0" y="20" width="40" height="4" />
+                </svg>
+            </button>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="site-main">
+
+        <section class="hero">
+            <div class="container">
+                <img src="img/whaletowel.png" alt="">
+                <h1>Serene</h1>
+                <p>In 20 years, there could be more plastic in our oceans than fish. Plastic pollution injures more than
+                    100.000
+                    marine animals every year. It takes around 450 years for one plastic bottle to decompose.</p>
+                <button class="btn btn--liquidBtn">
+                    <span>SHOP NOW</span>
+                    <div class="btn--liquidBtn--liquid">
+                </button>
+
+            </div>
+        </section>
+
+        <section id="section1" class="scroll-triggered">
+            <div class="container">
+
+                <div class="row">
+                    <div class="one-half contentblock-image">
+                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div>
+                    <div class="one-half contentblock-text">
+                        <h3>Section 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsum dolor cupiditate,
+                            voluptatum dolore
+                            minus animi optio nam voluptatem sit ipsam qui expedita molestiae nobis.</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section2" class="scroll-triggered">
+            <div class="container">
+
+                <div class="row swapped">
+                    <div class="one-half contentblock-image">
+                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div>
+                    <div class="one-half contentblock-text">
+                        <h3>Section 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsum dolor cupiditate,
+                            voluptatum dolore
+                            minus animi optio nam voluptatem sit ipsam qui expedita molestiae nobis.</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section3" class="scroll-triggered">
+            <div class="container">
+
+                <div class="row stacked">
+                    <div class="one-half contentblock-image">
+                        <img src="https://via.placeholder.com/1600x1200" alt="Placeholder">
+                    </div>
+                    <div class="one-half">
+                        <h3>Section 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ipsum dolor cupiditate,
+                            voluptatum dolore
+                            minus animi optio nam voluptatem sit ipsam qui expedita molestiae nobis.</p>
+                        <a href="#" class="button">Button</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <nav class="site-nav">
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- partial -->
+    <script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
+    <script src="js/script.js"></script>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com/cferdinandi/smooth-scroll -->
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    </script>
+
+    <!-- MAIN JS SCRIPT.JS -->
+    <script src="js/script.js" defer></script>
+
+</body>
+
+</html>

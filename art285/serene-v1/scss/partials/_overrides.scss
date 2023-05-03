@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'caslon_3_lt_stdroman';
+    src: url('/fonts/caslon3ltstd-roman-webfont.woff') format('woff'),
+        url('/fonts/caslon3ltstd-roman-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caslon_3_lt_stditalic';
+    src: url('/fonts/caslon3ltstd-italic-webfont.woff') format('woff'),
+        url('/fonts/caslon3ltstd-italic-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'caslon3ltstd-roman', serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body,
+p {
+    font-family: 'mr-eaves-modern', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    // height: 62px;
+    width: 100%;
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: $color-accent-dark;
+    z-index: 6;
+
+    @media (max-width: 575px) {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
+
+    &-menu {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        @media screen and (max-width: 740px) {
+            display: none;
+        }
+
+        a:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+
+    .menu-icon {
+        display: flex;
+        padding-top: 1em;
+        align-items: center;
+
+
+        svg {
+            width: 22px;
+        }
+    }
+
+    &-icons {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 18px;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.header-menu a {
+    padding: 1em;
+}
+
+.main {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+
+    @media screen and (max-width: 930px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-site-header {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 4px;
+        font-weight: 600;
+        transition-delay: 0.2s;
+    }
+}
+
+// CUSTOM BUTTON
+
+.btn {
+    font-family: "mr-eaves-modern", sans-serif;
+    // font-weight: 300;
+    // font-style: normal;
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px;
+    color: rgba(3, 39, 54, 1);
+    font-size: 1.4rem;
+    // letter-spacing: 2px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-sizing: border-box;
+
+    // liquid button
+
+    &--liquidBtn {
+        overflow: hidden;
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
+
+        &:hover div {
+            top: -120px;
+        }
+
+        div {
+            position: absolute;
+            top: -80px;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background: #216874;
+            box-shadow: inset 0 0 50px #ffffff;
+            transition: 0.5s;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                width: 200%;
+                height: 200%;
+                transform: translate(-50%, -75%);
+            }
+
+            &::before {
+                border-radius: 45%;
+                background: #ffffff;
+                animation: liquidAnimation 10s linear infinite;
+            }
+
+            &::after {
+                border-radius: 40%;
+                background: #ffffff;
+                animation: liquidAnimation 10s linear infinite;
+            }
+
+            @keyframes liquidAnimation {
+                0% {
+                    transform: translate(-50%, -75%) rotate(0deg);
+                }
+
+                100% {
+                    transform: translate(-50%, -75%) rotate(360deg);
+                }
+            }
+        }
+    }
+}
+
+
+/* UNDERWATER BACKGROUND */
+@import "partials/bubbles";
+
+/* ANIMATED SPLASH INTRO */
+.splash-intro {
+    background: rgba(0 0 0 / 1);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    z-index: 200;
+
+    /* ANIMATION CODE   */
+    animation-name: intro-animation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes intro-animation {
+    0% {}
+
+    80% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.splash-intro .logo {
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+
+    /* ANIMATION CODE   */
+    animation-name: logo-animation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes logo-animation {
+    0% {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    25% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}

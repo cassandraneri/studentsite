@@ -1,0 +1,76 @@
+/* SITE STRUCTURE */
+
+.site-header {
+    position: absolute;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-id {
+        display: flex;
+        align-items: center;
+    }
+
+    .logomark {
+        margin-right: .7em;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+}
+
+/* SITE FOOTER */
+.site-footer {
+    background: $color-accent-dark;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.site-main {
+    overflow-x: hidden;
+}
+
+
+section {
+    padding: 4em 0;
+    min-height: 101vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/* HERO SECTION */
+.hero {
+    background-color: $color-accent-dark;
+    text-align: center;
+    padding: 8em 0 4em 0;
+    min-height: 101vh;
+    color: $color-text-body-light;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        margin-bottom: .25em;
+        color: $color-text-headings-light;
+    }
+
+    p {
+        margin: 1em auto;
+    }
+}

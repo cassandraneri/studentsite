@@ -1,0 +1,234 @@
+/* SITE-NAV */
+.site-nav {
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    a {
+        display: inline-block;
+        padding: 1em;
+        line-height: 1;
+    }
+
+}
+
+.site-header {
+
+    .site-nav {
+
+        ul {
+            background: $color-link-dark;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translate(0, 0);
+            transition: all .3s ease-out;
+            z-index: 100;
+        }
+
+        &[data-navstate="closed"] {
+            ul {
+                transform: translate(100%, 0%);
+            }
+        }
+
+        // ANIMATE THE SUB NAV ITEMS IN GRADUALLY
+        li {
+            opacity: 0;
+            transform: translate(50px, 0);
+            transition:
+                .3s opacity linear 0s,
+                .2s transform ease-out .2s;
+
+            &:nth-child(0) {
+                transition-delay: .2s;
+            }
+
+            &:nth-child(1) {
+                transition-delay: .3s;
+            }
+
+            &:nth-child(2) {
+                transition-delay: .4s;
+            }
+
+            &:nth-child(3) {
+                transition-delay: .5s;
+            }
+
+            &:nth-child(4) {
+                transition-delay: .6s;
+            }
+
+            &:nth-child(5) {
+                transition-delay: .7s;
+            }
+
+            &:nth-child(6) {
+                transition-delay: .8s;
+            }
+
+            &:nth-child(7) {
+                transition-delay: .9s;
+            }
+        }
+
+        &[data-navstate="open"] {
+
+            .menu-button {
+                position: fixed;
+                top: 1.9em;
+                right: 1.5em;
+            }
+
+            li {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+        }
+
+        &[data-navstate="closed"] {
+            li {
+                transition: none;
+            }
+        }
+
+        .menu-button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            padding: .7em;
+            z-index: 200;
+
+            svg {
+                display: block;
+
+                rect {
+                    fill: white;
+                }
+            }
+
+        }
+
+        // SIMPLE X ANIMATION
+        .menu-button svg.simple-x-animation rect {
+            transform-origin: center;
+            transition: all .3s ease-out;
+        }
+
+        &[data-navstate="open"] .menu-button svg.simple-x-animation {
+            #menubar-top {
+                transform: translate(-5px, 9px) rotate(30deg);
+            }
+
+            #menubar-mid {
+                transform: scale(0, 1);
+            }
+
+            #menubar-bot {
+                transform: translate(-5px, -9px) rotate(-30deg);
+            }
+        }
+
+        // SQUISH X ANIMATION
+        .menu-button svg.squish-x-animation {
+            rect {
+                transform-origin: center;
+                animation-duration: .5s;
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-out;
+            }
+
+            #menubar-top {
+                animation-name: squish-x-top-close;
+            }
+
+            #menubar-bot {
+                animation-name: squish-x-bot-close;
+            }
+        }
+
+        &[data-navstate="open"] .menu-button svg.squish-x-animation {
+            #menubar-top {
+                animation-name: squish-x-top-open;
+            }
+
+            #menubar-mid {
+                opacity: 0;
+                transition: all 0s linear .25s;
+            }
+
+            #menubar-bot {
+                animation-name: squish-x-bot-open;
+            }
+        }
+
+        @keyframes squish-x-top-open {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(0, 10px);
+            }
+
+            100% {
+                transform: translate(-5px, 9px) rotate(30deg)
+            }
+        }
+
+        @keyframes squish-x-bot-open {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(0, -10px);
+            }
+
+            100% {
+                transform: translate(-5px, -9px) rotate(-30deg);
+            }
+        }
+
+        @keyframes squish-x-top-close {
+            0% {
+                transform: translate(-5px, 9px) rotate(30deg);
+            }
+
+            50% {
+                transform: translate(0, 10px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        @keyframes squish-x-bot-close {
+            0% {
+                transform: translate(-5px, -9px) rotate(-30deg);
+            }
+
+            50% {
+                transform: translate(0, -10px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+    }
+
+}
